@@ -1,0 +1,60 @@
+*{
+    font-family: "Inter", serif;
+    margin: 0;
+    padding: 0;
+   
+    box-sizing: border-box;
+}
+.Com {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  /* Sidebar */
+  .leftMenu {
+    background-color: rgb(15, 44, 87);
+    flex-shrink: 0;
+  }
+  
+  /* This wraps Header + Page Content */
+  .rightSide {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  /* Only Page Content area */
+  .rightPage {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  /* Responsive Sidebar Width */
+  @media (min-width: 1200px) {
+    .leftMenu {
+      width: 240px;
+    }
+  }
+  
+  @media (max-width: 1199px) and (min-width: 768px) {
+    .leftMenu {
+      width: 200px;
+    }
+  }
+  
+  @media (max-width: 767px) and (min-width: 481px) {
+    .leftMenu {
+      width: 160px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .leftMenu {
+      width: 65px;
+    }
+  }
+  

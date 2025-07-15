@@ -1,0 +1,1504 @@
+*{
+    font-size: 19px;
+}
+
+.AboutUs{
+    height: 63px; 
+    width: 100%;  
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    background-color: #0765a5;
+    color: white;
+    font-size: 27px;
+    font-weight: 600;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-style:bold;
+}
+
+
+.Launch{
+    width: 95%;
+    height: 250px;
+    margin-top: 40px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.Launchtop{
+    
+    height: 45px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 15%;
+    border-radius: 5px;
+    background-color: #0765a5;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+.LaunchBottom{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    color: #0765a5;
+    width: 95%;
+}
+
+/* Enhanced Responsive Styles for Launch Section */
+@media screen and (max-width: 1024px) {
+    *{
+        font-size: 12px;
+    }
+    .Launch{
+        height: auto;
+    }
+    .LaunchBottom {
+        flex-direction: column;
+        font-size: 10px;
+    }
+    .Launchtop {
+        width: 25%;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Launch{
+        height: auto;
+    }
+    .Launchtop {
+        width: 40%;
+        font-size: 16px;
+        padding: 10px;
+    }
+    .LaunchBottom {
+        text-align: left;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .Launch{
+        height: auto;
+    }
+    .Launchtop {
+        width: 50%;
+        font-size: 15px;
+        padding: 8px;
+    }
+    .LaunchBottom {
+        flex-direction: column;
+        text-align: left;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .Launch{
+        height: auto;
+    }
+    .Launchtop {
+        width: 60%;
+        font-size: 14px;
+        padding: 6px;
+    }
+    .LaunchBottom ul li{
+        padding: 8px;
+        font-size: 100px;
+    }
+
+}
+.Family{
+    width: 95%;
+    height: 350px;
+    margin-top: 40px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.FamilyTop{
+    
+    height: 45px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 15%;
+    border-radius: 5px;
+    background-color: #0765a5;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+.FamilyBottom{
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid red; */
+    color: #0765a5;
+    width: 95%;
+    
+    
+
+}
+
+.Flogo{
+    /* border: 2px solid red; */
+    margin-top: 20px;
+    width: 95%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.one
+{
+    /* border: 2px solid red; */
+    width: 9%;
+    margin: 10px;
+
+}
+.one img{
+    height: 90%;
+    width: 100%;
+}
+
+/* Responsive Styles for Family Section */
+@media screen and (max-width: 1024px) {
+    .Family{
+        height: 300px;
+    }
+    .FamilyTop {
+        width: 25%;
+        font-size: 17px;
+    }
+    .Flogo {
+        justify-content: center;
+    }
+    .one {
+        width: auto;
+        height: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Family{
+        height: 250px;
+    }
+    .FamilyTop {
+        width: 40%;
+        font-size: 16px;
+        padding: 10px;
+    }
+    .Flogo {
+        gap: 5px;
+    }
+    .one {
+        width: 60%;
+        height: 70%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .Family{
+        height: 270px;
+    }
+    .FamilyTop {
+        width: 50%;
+        font-size: 15px;
+        padding: 8px;
+    }
+    .Flogo {
+        gap: 2px;
+
+    }
+    .one {
+        width: auto;
+        height: 60%;
+        
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .FamilyTop {
+        width: 60%;
+        font-size: 14px;
+        padding: 6px;
+    }
+    .one {
+        width: 50%;
+        height: 40%;
+    }
+}
+
+
+.Statistics{
+    margin-top: -20px;
+}
+.Statistics img{
+    margin-top: -20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.Statistics img:hover{
+    margin-top: -20px;
+    transform: scale(1.1); /* Scale up by 10% */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.VstatusIntro{
+
+    width: 95%;
+    height: 350px;
+    margin-top: 40px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+    
+}
+
+.Vstatustop{
+
+    height: 45px;
+    margin-top: 20px;
+ 
+    width: 20%;
+    border-radius: 5px;
+    background-color: #0765a5;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+
+    
+}
+.Vstatusbottom{
+    /* border: 2px solid black; */
+    height: 78%;
+    width: 95%;
+    display: flex;
+    align-items: center;
+}
+
+.Vstatusleft{
+    /* border: 2px solid red; */
+    width: 70%;
+    height: 95%;
+    color: #0765a5;
+}
+
+.Vstatusleft ul li{
+    margin-top: 45px;
+}
+
+.Vstatusright{
+    /* border: 2px solid green; */
+    width: 28%;
+    height: 85%;
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.Vstatusright img{
+
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+
+/* Responsive Styles for Vstatus Section */
+@media screen and (max-width: 1514px) {
+    .VstatusIntro{
+        height: 500px;
+    }
+    .Vstatustop {
+        width: 25%;
+        font-size: 17px;
+    }
+    .Vstatusbottom {
+        flex-direction: column;
+       
+    }
+    .Vstatusleft {
+        /* border: 2px solid red; */
+        height: 50%;
+        width: 100%;
+    }
+    .Vstatusright {
+        align-items: first baseline;
+        /* border: 2px solid black; */
+        width: 400px;
+        height: 300px;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .Vstatustop {
+        width: 35%;
+        font-size: 16px;
+        padding: 10px;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .Vstatustop {
+        width: 44%;
+        font-size: 16px;
+        padding: 10px;
+    }
+    .Vstatusright {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .VstatusIntro{
+        height: 450px;
+    }
+    .Vstatustop {
+        width: 50%;
+        font-size: 15px;
+        padding: 8px;
+    }
+    .Vstatusleft {
+        text-align: left;
+    }
+    .Vstatusright {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .VstatusIntro{
+        height: 470px;
+    }
+    .Vstatustop {
+        width: 60%;
+        font-size: 14px;
+        padding: 6px;
+    }
+    .Vstatusright {
+        width: 90%;
+    }
+}
+
+
+
+.MottoIntro{
+
+    width: 95%;
+    height: 450px;
+    margin-top: 40px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+    
+}
+
+.Mottotop{
+
+    height: 45px;
+    margin-top: 20px;
+    margin-bottom: -10px;
+  
+    width: 17%;
+    border-radius: 5px;
+    background-color: #0765a5;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+.Mottobottom{
+    /* border: 2px solid black; */
+    height: 78%;
+    width: 95%;
+    display: flex;
+    align-items: center;
+}
+
+.Mottoright{
+    /* border: 2px solid red; */
+    width: 70%;
+    margin-left: 5%;
+    height: 95%;
+    color: #0765a5;
+}
+
+.Mottoright ul li{
+    margin-top: 23px;
+}
+
+.Mottoleft{
+    /* border: 2px solid green; */
+    width: 30%;
+    height: 93%;
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.Mottoleft img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive Styles for Motto Section */
+@media screen and (max-width: 1400px) {
+    .MottoIntro{
+        height: 600px;
+    }
+    .Mottotop {
+        width: 25%;
+        font-size: 17px;
+    }
+    .Mottobottom {
+        flex-direction: column;
+        align-items: center;
+    }
+    .Mottoright {
+        width: 100%;
+        text-align: left;
+    }
+    .Mottoleft {
+        /* border: 2px solid red; */
+        width: 20%;
+        height: 30%;
+        margin-left: 0;
+    }
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .MottoIntro{
+        height: 450px;
+    }
+    .Mottotop{
+        width: 35%;
+    }
+    .Mottoleft{
+        height: 50%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .MottoIntro{
+        height: 550px;
+    }
+    .Mottotop {
+        width: 40%;
+        font-size: 14px;
+        padding: 10px;
+    }
+    .Mottoleft {
+        width: 40%;
+        height: 60%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .MottoIntro{
+        height: 600px;
+    }
+    .Mottotop {
+        width: 50%;
+        font-size: 15px;
+        padding: 8px;
+    }
+    .Mottoright {
+       
+    }
+    .Mottoleft {
+        width: 40%;
+        height: 60%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .MottoIntro{
+        height: 600px;
+    }
+    .Mottotop {
+        width: 60%;
+        font-size: 14px;
+        padding: 6px;
+    }
+    .Mottoleft {
+        width: 40%;
+        height: 60%;
+    }
+    
+}
+
+
+.ObjectivesIntro{
+
+    width: 95%;
+    height: 450px;
+    margin-top: 40px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+    
+}
+
+.Objectivestop{
+
+    height: 45px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    width: 17%;
+    border-radius: 5px;
+    background-color: #0765a5;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+.Objectivesbottom{
+    /* border: 2px solid black; */
+    height: 78%;
+    width: 95%;
+    display: flex;
+    align-items: center;
+}
+
+.Objectivesleft{
+    /* border: 2px solid red; */
+    width: 65%;
+    height: 95%;
+    color: #0765a5;
+}
+
+.Objectivesleft ul li{
+    margin-top: 13px;
+}
+
+.Objectivesright{
+    /* border: 2px solid green; */
+    width: 28%;
+    height: 95%;
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Objectivesright img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive Styles for Objectives Section */
+@media screen and (max-width: 1024px) {
+    .Objectivestop {
+        width: 25%;
+        font-size: 17px;
+    }
+    .Objectivesbottom {
+       
+        align-items: center;
+    }
+    .Objectivesleft {
+        width: 70%;
+       
+    }
+    .Objectivesright {
+        width: 30%;
+       height: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Objectivestop {
+        width: 40%;
+        font-size: 16px;
+        padding: 10px;
+    }
+    .Objectivesright {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .ObjectivesIntro{
+        height: 500px;
+    }
+    .Objectivestop {
+        width: 50%;
+        font-size: 15px;
+        padding: 8px;
+    }
+    .Objectivesleft {
+        
+    }
+    .Objectivesright {
+        width: 60%;
+        height: 40%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .ObjectivesIntro{
+        height: 600px;
+    }
+    .Objectivestop {
+        width: 60%;
+        font-size: 14px;
+        padding: 6px;
+    }
+    .Objectivesright {
+        width: 60%;
+        height: 40%;
+    }
+}
+
+.Badge{
+    width: 95%;
+    height: 500px;
+    margin-top: 40px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+
+}
+
+.BadgeToP{
+    height: 45px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  
+    width: 19%;
+    border-radius: 5px;
+    background-color: #0765a5;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.BadgeBottom{
+    height: 78%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+
+    color: #0765a5;
+
+}
+
+.BadgeBottom ul li{
+    margin-top: 6px;
+}
+
+/* Responsive Styles for Badge Section */
+@media screen and (max-width: 1400px) {
+    .BadgeToP {
+        width: 27%;
+        font-size: 17px;
+    }
+    .BadgeBottom {
+      
+    }
+}
+@media screen and (max-width: 1100px) {
+    .Badge{
+        height: 530px;
+    }
+}
+@media screen and (max-width: 980px) {
+    .Badge{
+        height: 380px;
+    }
+    .BadgeToP{
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .Badge{
+        height: 400px;
+    }
+    .BadgeToP {
+        width: 42%;
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .BadgeToP {
+        width: 50%;
+        font-size: 15px;
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Badge{
+        height: 430px;
+    }
+    .BadgeToP {
+        width: 60%;
+        font-size: 14px;
+        padding: 6px;
+    }
+}
+
+
+
+.MottoIntro2{
+
+    width: 95%;
+ 
+    margin-top: 40px;
+    height: 180px;
+    background: transparent;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+/*     
+    border: 2px solid red; */
+
+    
+    
+}
+
+.Mottotop2{
+
+    height: 45px;
+    margin-top: 20px;
+    margin-bottom: -10px;
+  
+    width: 17%;
+    border-radius: 5px;
+    background-color: #0765a5;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+.Mottobottom2{
+    /* border: 2px solid black; */
+    height: 78%;
+    width: 65%;
+    display: flex;
+    align-items: center;
+}
+
+.Mottoright2{
+    /* border: 2px solid red; */
+    width: 80%;
+   
+    height: 95%;
+    color: #0765a5;
+    
+}
+
+.Mottoright2 ul li{
+    margin-top: 23px;
+}
+
+.Mottoleft2{
+    /* border: 2px solid green; */
+    width: 20%;
+    height: 93%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.Mottoleft2 img{
+    width: 50%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1220px) {
+
+    .MottoIntro2
+    {
+        height: 150px;
+        margin-bottom: 50px;
+    }
+    .Mottobottom2{
+        /* border: 2px solid black; */
+        height: 100%;
+        
+        width: 65%;
+        display: flex;
+        align-items: center;
+    }
+    .Mottoleft2 img{
+        margin-top: 50px;
+        width: 150px;
+        height: 150px;
+    }
+    
+    
+}
+@media screen and (max-width: 1024px) {
+
+    .MottoIntro2
+    {
+        height: 100px;
+    }
+    .Mottobottom2{
+        /* border: 2px solid rgb(167, 105, 105); */
+        height: 100%;
+        
+        width: 65%;
+        display: flex;
+        align-items: center;
+    }
+    .Mottoleft2 img{
+        width: 150px;
+        height: 130px;
+    }
+    
+    
+}
+@media screen and (max-width: 778px) {
+
+    .MottoIntro2
+    {
+        height: 100px;
+    }
+    .Mottoleft2{
+        width: 30%;
+    }
+    .Mottoright2{
+        width: 70%;
+    }
+    .Mottobottom2{
+        /* border: 2px solid rgb(167, 105, 105); */
+        height: 100%;
+        
+        width: 90%;
+        display: flex;
+        align-items: center;
+    }
+    .Mottoleft2 img{
+        width: 130px;
+        height: 130px;
+    }
+    
+    
+}
+
+.com{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+
+
+
+.Home{
+    width: 100%;
+    height: 600px;
+    margin-top: 30px;
+}
+
+.Home img{
+    height: 100%;
+    width: 100%;
+}
+
+.HomeMid{
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    background-color: #0765a5;
+}
+
+.MidOne{
+
+    /* border: 2px solid green; */
+    
+    width: 95%;
+    height: 150px;
+    border-radius: 20px;
+    margin-top: 50px;
+    background-color: #ffffff;
+    padding: 20px;
+    color: #0765a5;
+
+
+}
+
+.MidTwo{
+
+    width: 95%;
+    height: 430px;
+    border-radius: 20px;
+    margin-top: 50px;
+    background-color: #ffffff;
+    padding: 20px;
+    color: #0765a5;
+    
+}
+
+.MidLR{
+    display: flex;
+    /* border: 2px solid black; */
+    height: 330px;
+}
+.HomeLeft{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    /* border: 2px solid red; */
+}
+.HomeRight{
+    width: 20%;
+    margin-left: 10%;
+    height: 100%;
+    /* border: 2px solid green; */
+}
+
+.HomeRight img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+.Coordinators{
+    /* border: 2px solid red; */
+    margin-top: 200px;
+    height: 1200px;
+    width: 80%;
+}
+
+.Sub{
+
+    /* border: 2px solid black; */
+    min-height: 400px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.CPhoto{
+    /* border: 2px solid green; */
+    height: 250px;
+    width: 170px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 0 1px hsl(0, 1%, 19%);
+    margin-bottom: 40px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.CPhoto:hover{
+    transform: scale(1.1); /* Scale up by 10% */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+.C1{
+    /* border: 2px solid red; */
+    height: 95%;
+    width: 95%;
+    border-radius: 10px;
+    
+}
+
+.C1 img{
+    height: 160px;
+    width: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.C2{
+    /* border: 2px solid red; */
+    height: 25%;
+    width: 95%;
+    border-radius: 10px;
+    font-size: 12px;
+    text-align: center;
+    
+}
+
+.C2 .p1{
+    font-size: 15px;
+    color: #0765a5;
+    font-weight: 700;
+    margin-top: -10px;
+}
+.C2 .p2{
+    font-size: 13px;
+    margin-top: -20px;
+    color: #5a5959;
+}
+.C2 .p3{
+    font-size: 13px;
+    margin-top: -20px;
+    color: #5a5959;
+}
+
+.StudentCoordinator{
+    
+    margin-top: 20px;
+    height: 240px;
+    width: 76%;
+    overflow: hidden;
+    margin-bottom: -100px;
+}
+.StudentCoordinator h6{
+    margin-left: 170px;
+}
+.SSub{
+    
+
+    
+    
+    margin-left: 160px;
+    margin-right: 140px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+
+
+    margin-bottom: -40px;
+    height: 350px;
+   
+   
+}
+
+
+.S1{
+    /* border: 2px solid red; */
+    height: 65%;
+    width: 95%;
+    border-radius: 10px;
+    
+}
+.S1 img{
+    height: 200px;
+    width: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.S2{
+    /* border: 2px solid red; */
+    height: 15%;
+    width: 95%;
+    border-radius: 10px;
+    font-size: 12px;
+    text-align: center;
+    
+}
+.S2 .p1{
+    font-size: 15px;
+    color: #0765a5;
+    font-weight: 700;
+    margin-top: 15px;
+}
+.S2 .p2{
+    font-size: 13px;
+    margin-top: -20px;
+    color: #5a5959;
+}
+.S2 .p3{
+    font-size: 13px;
+    margin-top: -20px;
+    color: #5a5959;
+}
+
+
+
+.SCPhoto{
+    
+    margin-top: 20px;
+    height: 270px;
+    min-width: 180px;
+    margin-left: 2px;
+    margin-right: 2px;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 0 0 2px #323131;
+    margin-bottom: 40px;
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation-name:slide ;
+    animation-direction: reverse;
+    animation: slide 20s infinite ease-in-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: slide 2s linear infinite;
+
+}
+
+.SCPhoto:hover{
+    transform: scale(1.1);  /* Scale up by 10% */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+
+} 
+@keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); } /* Moves only half to ensure looping */
+}
+.SSub {
+    display: flex;
+    gap: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: max-content; /* Ensures all items fit properly */
+    animation: scroll 20s linear infinite;
+    padding-right: 100%; /* Prevents blank space at the end */
+    
+}
+
+/* Pause scrolling when hovering */
+.SSub:hover {
+    animation-play-state: paused;
+    transform: scale(1.1); /* Scale up by 10% */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+.yearheading{
+    height: 45px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 15%;
+    border-radius: 5px;
+    background-color: #0765a5;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 170px;
+}
+
+.Acamp{
+    /* border: 2px solid red; */
+    margin-top: 100px;
+    height: 260px;
+    width: 99%;
+}
+.Acamp h6{
+    margin-left: 170px;
+}
+.CSub{
+    /* border: 2px solid black; */
+
+    scrollbar-width: none;
+    overflow: hidden;
+    min-height: 180px;
+    margin-left: 160px;
+    margin-right: 140px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.CCPhoto{
+    /* border: 2px solid green; */
+    margin-top: 20px;
+    height: 130px;
+    width: 200px;
+    
+    margin-left: 8px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 5px #323131;
+    margin-bottom: 40px;
+
+}
+.CCPhoto img{
+    margin-left: -3px;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    margin: auto;
+
+}
+
+.AnnualNav{
+    margin-left: 170px;
+    margin-bottom: 200px;
+}
+
+.AnnualFooterStart{
+    margin-top: 200px;
+    width: 100%;
+}
+
+.AnnualFooterStart .AboutUs{
+    flex-direction: column;
+    height: 80px;
+}
+
+.AnnualFooterStart p{
+    font-size: 10px;
+    font-weight: 500;
+
+}
+@media screen and (max-width: 1345px) {
+    .yearheading {
+        height: 30px;
+        width: 20%;
+        font-size: 11px;
+        margin-left: 0px;
+       
+    }
+
+    .Acamp {
+        height: 200px;
+        width: 95%;
+        margin-top: 10px;
+    }
+
+    .Acamp h6 {
+        margin-left: 50px;
+        font-size: 12px;
+    }
+
+    .CSub {
+        height: 160px;
+        margin-left: 0px;
+        margin-right: 0px;
+        /* border: 2px solid red; */
+    }
+
+    .CCPhoto {
+        height: 120px;
+        
+        margin-left: 0px;
+        margin-right: 4px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        /* border: 2px solid black; */
+        width: 190px;
+    }
+
+    .CCPhoto img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .AnnualNav {
+        display: none;
+        margin-left: 170px;
+        margin-bottom: 0px;
+    }
+
+    .AnnualFooterStart {
+        margin-top: 30px;
+    }
+
+    .AnnualFooterStart .AboutUs {
+        flex-direction: column;
+        height: 60px;
+    }
+
+    .AnnualFooterStart p {
+        font-size: 6px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 936px) {
+    .yearheading {
+        height: 30px;
+        width: 25%;
+        font-size: 10px;
+        margin-left: 0px;
+    }
+
+    .Acamp {
+        height: 200px;
+        width: 95%;
+        margin-top: 10px;
+    }
+
+    .Acamp h6 {
+        margin-left: 50px;
+        font-size: 12px;
+    }
+
+    .CSub {
+        height: 160px;
+        margin-left: 0px;
+        margin-right: 0px;
+        /* border: 2px solid red; */
+    }
+
+    .CCPhoto {
+        height: 120px;
+        min-width: 180px;
+        margin-left: 0px;
+        margin-right: 4px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        /* border: 2px solid black; */
+    }
+
+    .CCPhoto img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .AnnualNav {
+        display: none;
+        margin-left: 170px;
+        margin-bottom: 0px;
+    }
+
+    .AnnualFooterStart {
+        margin-top: 30px;
+    }
+
+    .AnnualFooterStart .AboutUs {
+        flex-direction: column;
+        height: 60px;
+    }
+
+    .AnnualFooterStart p {
+        font-size: 6px;
+        font-weight: 500;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .yearheading {
+        height: 30px;
+        width: 35%;
+        font-size: 10px;
+        margin-left: 0px;
+    }
+
+    .Acamp {
+        height: 200px;
+        width: 95%;
+        margin-top: 10px;
+    }
+
+    .Acamp h6 {
+        margin-left: 50px;
+        font-size: 12px;
+    }
+
+    .CSub {
+        height: 160px;
+        margin-left: 0px;
+        margin-right: 0px;
+        /* border: 2px solid red; */
+    }
+
+    .CCPhoto {
+        height: 120px;
+        width: 150px;
+        margin-left: 0px;
+        margin-right: 4px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        /* border: 2px solid black; */
+    }
+
+    .CCPhoto img {
+        height: 100%;
+        width: 100%;
+    }
+    .AnnualNav{
+        display: none;
+        margin-left: 170px;
+        margin-bottom: 0px;
+    }
+    .AnnualFooterStart{
+        margin-top: 30px;
+    }
+    .AnnualFooterStart .AboutUs{
+        flex-direction: column;
+        height: 60px;
+    }
+    
+    .AnnualFooterStart p{
+        font-size: 6px;
+        font-weight: 500;
+    
+    }
+}
+
+ .Pcordi{
+    
+    width: 350px;
+    /* margin-left: 37%; */
+   margin: auto;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+ }
+ 

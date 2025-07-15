@@ -1,0 +1,1500 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+}
+
+/* About Us Section */
+.AboutUs {
+    height: 63px; 
+    width: 100%;  
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    background-color: #0765a5;
+    color: white;
+    font-size: 27px;
+    font-weight: 600;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-style: bold;
+}
+
+/* Launch Section */
+.Launch {
+    width: 95%;
+    max-width: 1200px;
+    min-height: 250px;
+    margin: 40px auto;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.Launchtop {
+    height: 45px;
+    margin: 20px 0 30px 0;
+    width: 200px;
+    border-radius: 5px;
+    background-color: #0765a5;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.LaunchBottom {
+    min-height: 50%;
+    display: flex;
+    align-items: center;
+    color: #0765a5;
+    width: 95%;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Enhanced Responsive Styles for Launch Section */
+@media screen and (max-width: 1024px) {
+    .Launch {
+        min-height: auto;
+        padding: 15px;
+    }
+    
+    .LaunchBottom {
+        flex-direction: column;
+        font-size: 14px;
+    }
+    
+    .Launchtop {
+        width: 250px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Launch {
+        width: 90%;
+        min-height: auto;
+        padding: 10px;
+    }
+    
+    .Launchtop {
+        width: 280px;
+        font-size: 16px;
+        padding: 10px;
+    }
+    
+    .LaunchBottom {
+        text-align: left;
+        padding: 15px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .Launch {
+        width: 95%;
+        min-height: auto;
+        padding: 8px;
+    }
+    
+    .Launchtop {
+        width: 90%;
+        max-width: 300px;
+        font-size: 15px;
+        padding: 8px;
+    }
+    
+    .LaunchBottom {
+        flex-direction: column;
+        text-align: left;
+        padding: 10px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .Launch {
+        width: 98%;
+        min-height: auto;
+        padding: 6px;
+    }
+    
+    .Launchtop {
+        width: 95%;
+        font-size: 14px;
+        padding: 6px;
+    }
+    
+    .LaunchBottom ul li {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+/* Family Section */
+.Family {
+    width: 95%;
+    max-width: 1200px;
+    min-height: 350px;
+    margin: 40px auto;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.FamilyTop {
+    height: 45px;
+    margin: 20px 0 30px 0;
+    width: 200px;
+    border-radius: 5px;
+    background-color: #0765a5;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.FamilyBottom {
+    min-height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #0765a5;
+    width: 95%;
+}
+
+.Flogo {
+    margin-top: 20px;
+    width: 95%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.one {
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.one img {
+    height: 90%;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Responsive Styles for Family Section */
+@media screen and (max-width: 1024px) {
+    .Family {
+        min-height: 300px;
+        padding: 15px;
+    }
+    
+    .FamilyTop {
+        width: 250px;
+        font-size: 17px;
+    }
+    
+    .Flogo {
+        justify-content: center;
+        height: auto;
+    }
+    
+    .one {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Family {
+        width: 90%;
+        min-height: auto;
+        padding: 10px;
+    }
+    
+    .FamilyTop {
+        width: 280px;
+        font-size: 16px;
+    }
+    
+    .Flogo {
+        justify-content: center;
+        height: auto;
+    }
+    
+    .one {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .Family {
+        width: 95%;
+        min-height: auto;
+        padding: 8px;
+    }
+    
+    .FamilyTop {
+        width: 90%;
+        max-width: 300px;
+        font-size: 15px;
+    }
+
+    .Flogo {
+        justify-content: center;
+        height: auto;
+    }
+        
+    .one {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .FamilyTop {
+        width: 95%;
+        font-size: 14px;
+    }
+    
+    .one {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Statistics Section */
+.Statistics {
+    width: 95%;
+    margin: 40px auto;
+}
+
+.Statistics img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.Statistics img:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+/* Vstatus Section */
+.VstatusIntro {
+    width: 95%;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.Vstatustop {
+    height: 45px;
+    margin: 20px 0 30px 0;
+    width: 200px;
+    border-radius: 5px;
+    background-color: #0765a5;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.Vstatusbottom {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.Vstatusleft {
+    flex: 1;
+    color: #0765a5;
+    padding: 20px;
+}
+
+.Vstatusleft ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.Vstatusright {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Vstatusright img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles for Vstatus Section */
+@media screen and (max-width: 1514px) {
+    .VstatusIntro {
+        width: 90%;
+        padding: 15px;
+    }
+    
+    .Vstatustop {
+        width: 250px;
+        font-size: 17px;
+    }
+    
+    .Vstatusbottom {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .Vstatusleft {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .Vstatusright {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .Vstatustop {
+        width: 280px;
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Vstatustop {
+        width: 90%;
+        max-width: 300px;
+        font-size: 15px;
+    }
+    
+    .Vstatusright {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .VstatusIntro {
+        width: 95%;
+        padding: 8px;
+    }
+    
+    .Vstatustop {
+        width: 95%;
+        font-size: 14px;
+        padding: 8px;
+    }
+    
+    .Vstatusleft {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .Vstatusright {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .VstatusIntro {
+        width: 98%;
+        padding: 6px;
+    }
+    
+    .Vstatustop {
+        width: 95%;
+        font-size: 13px;
+        padding: 6px;
+    }
+    
+    .Vstatusright {
+        width: 100%;
+    }
+}
+
+/* Motto Section */
+.MottoIntro {
+    width: 95%;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.Mottotop {
+    height: 45px;
+    margin: 20px 0 30px 0;
+    width: 200px;
+    border-radius: 5px;
+    background-color: #0765a5;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.Mottobottom {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.Mottoright {
+    flex: 1;
+    color: #0765a5;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.Mottoright ul li {
+    margin-bottom: 10px;
+}
+
+.Mottoleft {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Mottoleft img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles for Motto Section */
+@media screen and (max-width: 1400px) {
+    .MottoIntro {
+        width: 90%;
+        padding: 15px;
+    }
+    
+    .Mottotop {
+        width: 250px;
+        font-size: 17px;
+    }
+    
+    .Mottobottom {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .Mottoright {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .Mottoleft {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .MottoIntro {
+        width: 90%;
+        padding: 10px;
+    }
+    
+    .Mottotop {
+        width: 280px;
+        font-size: 16px;
+    }
+    
+    .Mottoleft {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .MottoIntro {
+        width: 95%;
+        padding: 8px;
+    }
+    
+    .Mottotop {
+        width: 90%;
+        max-width: 300px;
+        font-size: 15px;
+        padding: 8px;
+    }
+    
+    .Mottoleft {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .MottoIntro {
+        width: 98%;
+        padding: 6px;
+    }
+    
+    .Mottotop {
+        width: 95%;
+        font-size: 14px;
+        padding: 6px;
+    }
+    
+    .Mottoright {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .Mottoleft {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .MottoIntro {
+        width: 98%;
+        padding: 6px;
+    }
+    
+    .Mottotop {
+        width: 95%;
+        font-size: 13px;
+        padding: 6px;
+    }
+    
+    .Mottoleft {
+        width: 100%;
+    }
+}
+
+/* Objectives Section */
+.ObjectivesIntro {
+    width: 95%;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.Objectivestop {
+    height: 45px;
+    margin: 20px 0 30px 0;
+    width: 200px;
+    border-radius: 5px;
+    background-color: #0765a5;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.Objectivesbottom {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.Objectivesleft {
+    flex: 1;
+    color: #0765a5;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.Objectivesleft ul li {
+    margin-bottom: 10px;
+}
+
+.Objectivesright {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Objectivesright img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles for Objectives Section */
+@media screen and (max-width: 1024px) {
+    .Objectivestop {
+        width: 250px;
+        font-size: 17px;
+    }
+       
+    .Objectivesbottom {
+        flex-direction: column;
+        gap: 15px;
+    }
+       
+    .Objectivesleft {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .Objectivesright {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Objectivestop {
+        width: 280px;
+        font-size: 16px;
+        padding: 10px;
+    }
+    
+    .Objectivesright {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .ObjectivesIntro {
+        width: 95%;
+        padding: 8px;
+    }
+    
+    .Objectivestop {
+        width: 90%;
+        max-width: 300px;
+        font-size: 15px;
+        padding: 8px;
+    }
+        
+    .Objectivesleft {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .Objectivesright {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .ObjectivesIntro {
+        width: 98%;
+        padding: 6px;
+    }
+    
+    .Objectivestop {
+        width: 95%;
+        font-size: 14px;
+        padding: 6px;
+    }
+    
+    .Objectivesright {
+        width: 100%;
+    }
+}
+
+/* Badge Section */
+.Badge {
+    width: 95%;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.BadgeToP {
+    height: 45px;
+    margin: 20px 0 30px 0;
+    width: 200px;
+    border-radius: 5px;
+    background-color: #0765a5;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.BadgeBottom {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.BadgeBottom ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Responsive Styles for Badge Section */
+@media screen and (max-width: 1400px) {
+    .BadgeToP {
+        width: 250px;
+        font-size: 17px;
+    }
+      
+    .BadgeBottom {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .Badge {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .Badge {
+        width: 95%;
+        padding: 10px;
+    }
+    
+    .BadgeToP {
+        width: 280px;
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .Badge {
+        width: 98%;
+        padding: 8px;
+    }
+    
+    .BadgeToP {
+        width: 90%;
+        max-width: 300px;
+        font-size: 15px;
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .BadgeToP {
+        width: 95%;
+        font-size: 14px;
+        padding: 6px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Badge {
+        width: 98%;
+        padding: 6px;
+    }
+
+    .BadgeToP {
+    width: 95%;
+        font-size: 13px;
+        padding: 6px;
+    }
+}
+
+/* Motto Section 2 */
+.MottoIntro2 {
+    width: 95%;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.Mottotop2 {
+    height: 45px;
+    margin: 20px 0 30px 0;
+    width: 200px;
+    border-radius: 5px;
+    background-color: #0765a5;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.Mottobottom2 {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.Mottoright2 {
+    flex: 1;
+    color: #0765a5;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.Mottoright2 ul li {
+    margin-bottom: 10px;
+}
+
+.Mottoleft2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Mottoleft2 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles for Motto Section 2 */
+@media screen and (max-width: 1220px) {
+    .MottoIntro2 {
+        width: 90%;
+        padding: 15px;
+    }
+    
+    .Mottobottom2 {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .Mottoleft2 img {
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .MottoIntro2 {
+        width: 90%;
+        padding: 10px;
+    }
+    
+    .Mottobottom2 {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .Mottoleft2 img {
+        max-width: 70%;
+    }
+}
+
+@media screen and (max-width: 778px) {
+    .MottoIntro2 {
+        width: 95%;
+        padding: 8px;
+    }
+    
+    .Mottoleft2 {
+        width: 100%;
+    }
+    
+    .Mottoright2 {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .Mottobottom2 {
+    flex-direction: column;
+        gap: 10px;
+    }
+    
+    .Mottoleft2 img {
+        max-width: 60%;
+    }
+}
+
+/* Common Styles */
+.com {
+    width: 95%;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 20px;
+  }
+
+/* Home Section */
+.Home {
+    width: 95%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.Home img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.HomeMid {
+    width: 95%;
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.MidOne {
+    flex: 1;
+    min-width: 300px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    color: #0765a5;
+    line-height: 1.6;
+}
+
+.MidTwo {
+    flex: 1;
+    min-width: 300px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    color: #0765a5;
+    line-height: 1.6;
+}
+
+.MidLR {
+    width: 95%;
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.HomeLeft {
+    flex: 1;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 20px;
+    color: #0765a5;
+    line-height: 1.6;
+}
+
+.HomeRight {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HomeRight img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Coordinators Section */
+.Coordinators {
+    width: 95%;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.Sub {
+    height: 45px;
+    margin: 20px 0 30px 0;
+    width: 200px;
+    border-radius: 5px;
+    background-color: #0765a5;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.CPhoto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.CPhoto:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+.C1 {
+    flex: 1;
+    min-width: 250px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.C1 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.C2 {
+    flex: 1;
+    min-width: 250px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.C2 .p1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #0765a5;
+    margin-bottom: 10px;
+}
+
+.C2 .p2 {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.C2 .p3 {
+    font-size: 12px;
+    color: #999;
+}
+
+/* Student Coordinator Section */
+.StudentCoordinator {
+    width: 95%;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.StudentCoordinator h6 {
+    text-align: center;
+    color: #0765a5;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.SSub {
+    height: 45px;
+    margin: 20px 0 30px 0;
+    width: 200px;
+    border-radius: 5px;
+    background-color: #0765a5;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.SSub {
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.SSub:hover {
+    animation-play-state: paused;
+}
+
+.S1 {
+    flex: 1;
+    min-width: 250px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.S1 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.S2 {
+    flex: 1;
+    min-width: 250px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.S2 .p1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #0765a5;
+    margin-bottom: 10px;
+}
+
+.S2 .p2 {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.S2 .p3 {
+    font-size: 12px;
+    color: #999;
+}
+
+.SCPhoto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.SCPhoto:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+/* Year Heading */
+.yearheading {
+    width: 95%;
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+    color: #0765a5;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+}
+
+/* Annual Camp Section */
+.Acamp {
+    width: 95%;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.Acamp h6 {
+    text-align: center;
+    color: #0765a5;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.CSub {
+    height: 45px;
+    margin: 20px 0 30px 0;
+    width: 200px;
+    border-radius: 5px;
+    background-color: #0765a5;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.CCPhoto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.CCPhoto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.CCPhoto img:hover {
+    transform: scale(1.05);
+}
+
+.AnnualNav {
+    width: 95%;
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.AnnualFooterStart {
+    width: 95%;
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+    color: #0765a5;
+}
+
+.AnnualFooterStart .AboutUs {
+    margin-bottom: 20px;
+}
+
+.AnnualFooterStart p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Responsive Styles for Annual Camp Section */
+@media screen and (max-width: 1345px) {
+    .yearheading {
+        width: 90%;
+        font-size: 22px;
+        padding: 15px;
+    }
+
+    .Acamp {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .Acamp h6 {
+        font-size: 18px;
+    }
+
+    .CSub {
+        width: 250px;
+        font-size: 17px;
+    }
+
+    .CCPhoto {
+        gap: 15px;
+    }
+
+    .CCPhoto img {
+        max-width: 100%;
+    }
+
+    .AnnualNav {
+        width: 90%;
+    }
+
+    .AnnualFooterStart {
+        width: 90%;
+    }
+
+    .AnnualFooterStart .AboutUs {
+        margin-bottom: 15px;
+    }
+
+    .AnnualFooterStart p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 936px) {
+    .yearheading {
+        width: 95%;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .Acamp {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .Acamp h6 {
+        font-size: 16px;
+    }
+
+    .CSub {
+        width: 280px;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .CCPhoto {
+        gap: 10px;
+    }
+
+    .CCPhoto img {
+        max-width: 100%;
+    }
+
+    .AnnualNav {
+        width: 95%;
+    }
+
+    .AnnualFooterStart {
+        width: 95%;
+    }
+
+    .AnnualFooterStart .AboutUs {
+        margin-bottom: 10px;
+    }
+
+    .AnnualFooterStart p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .yearheading {
+        width: 98%;
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    .Acamp {
+        width: 98%;
+        padding: 8px;
+    }
+
+    .Acamp h6 {
+        font-size: 14px;
+    }
+
+    .CSub {
+        width: 90%;
+        max-width: 300px;
+        font-size: 15px;
+        padding: 8px;
+    }
+
+    .CCPhoto {
+        gap: 8px;
+    }
+
+    .CCPhoto img {
+        max-width: 100%;
+    }
+    
+    .AnnualNav {
+        width: 98%;
+    }
+    
+    .AnnualFooterStart {
+        width: 98%;
+    }
+    
+    .AnnualFooterStart .AboutUs {
+        margin-bottom: 8px;
+    }
+    
+    .AnnualFooterStart p {
+        font-size: 13px;
+    }
+}
+
+/* Pcordi Section */
+.Pcordi {
+    width: 95%;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    color: #0765a5;
+    line-height: 1.6;
+} 

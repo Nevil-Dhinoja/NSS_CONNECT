@@ -1,0 +1,970 @@
+.events{
+    background-color: rgb(248, 249, 250);
+    
+    
+
+    padding: 25px;
+    
+    
+}
+
+.eventtitle{
+    
+
+    color: rgb(15, 44, 87);
+    display: flex;
+    height: 50px;
+    /* border: 2px solid red; */
+}
+
+.eventtitleLeft{
+        width: 83%;
+        font-size: 23px;
+        font-weight: 600;
+        /* border: 2px solid red; */
+
+}
+
+.eventtitleRight{
+    width: 17%;
+
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    /* border: 2px solid red; */
+
+}
+.eventtitleRight .eventbtn1{
+    width: 100%;
+    height: 90%;
+    color: white;
+    background-color: rgb(15, 44, 87);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+.eventtitleRight .eventbtn1 span{
+    margin-right: 10px;
+    font-size: 15px;
+    
+    
+}
+
+
+.eventsMidBox{
+    border: 1px solid rgb(222, 218, 218);
+    min-height: 200px;
+    margin-top: 20px;
+    border-radius: 7px;
+    background-color: white;
+    padding: 20px;
+    /* border: 2px solid red; */
+
+}
+
+.eventsMidTitle{
+  
+    height: 45px;
+    display: flex;
+    /* border: 2px solid red; */
+}
+
+.eventsMidTitleLeft{
+ 
+    width: 67.5%;
+    display: flex;
+    align-items: center;
+
+    /* border: 2px solid red; */
+   
+    
+}
+.eventsMidTitleLeft h3{
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(15, 44, 87);
+}
+.eventsMidTitleLeft span{
+    font-size: 23px;
+    color: rgb(15, 44, 87);
+}
+.eventsMidTitleRight{
+ 
+    width: 32.5%;
+}
+
+
+#eventsConvertInto{
+    border: 1px solid rgb(222, 218, 218);
+    border-radius: 6px;
+    height: 90%;
+    width: 50px;
+    color: rgb(74, 76, 77);
+    background-color: rgb(248, 249, 250);
+    padding: 10px;
+    font-size: 13px;
+    margin-left: 10px;
+}
+#eventsSearch{
+    border: 1px solid rgb(222, 218, 218);
+    border-radius: 6px;
+    height: 90%;
+    width: 300px;
+    color: rgb(74, 76, 77);
+    background-color: rgb(248, 249, 250);
+    padding: 10px;
+    font-size: 13px;
+    margin-left: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  .eventtabs {
+    display: flex;
+
+    
+    /* border: 1px solid rgb(222, 218, 218); */
+    border-radius: 6px;
+    height: 100%;
+    width: 40%;
+    padding: 4px;
+   
+    background-color: rgb(241, 244, 246);
+    
+  }
+  
+  .eventtabs button {
+    
+    
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #003366;
+    font-weight: 600;
+    height: 100%;
+    width: 50%;
+  }
+
+  #ebtn1{
+    background-color: rgb(251, 251, 255);
+    color: rgb(15, 44, 87);
+    font-size: 14px;
+    font-weight: 500;
+
+  }
+
+  #ebtn2{
+    background-color: transparent;
+    color: rgb(143, 155, 172);
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .eventtabs .active {
+    background-color: #003366;
+    color: #fff;
+  }
+  
+  .eventtab-content .eventsection {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+    margin-top: 20px;
+    display: flex;
+  }
+
+  .eventSectionLeft{
+    /* border: 2px solid red; */
+    width: 80%;
+    min-height: 100px;
+
+  }
+  .eventSectionLeftTitle{
+    display: flex;
+
+  }
+
+  .eventSectionLeftTitleLeft p{
+    color: rgb(15, 44, 87);
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+  .eventSectionLeftTitleRight button{
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    border-radius: 20px;
+    height: 25px;
+    width: 80px;
+    background-color: rgb(233, 255, 233);
+    color: rgb(7, 60, 7);
+    font-weight: 500;
+  }
+  .eventSectionLeftTitleRight .completed{
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    border-radius: 20px;
+    height: 25px;
+    min-width: 80px;
+    background-color: rgb(236, 233, 255);
+    color: rgb(10, 7, 60);
+    font-weight: 500;
+  }
+  .eventSectionLeftTitleRight .reportSubmited{
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    border-radius: 20px;
+    height: 25px;
+    min-width: 120px;
+    background-color: rgb(233, 255, 233);
+    color: rgb(7, 60, 7);
+    font-weight: 500;
+  }
+
+  .eventSectionLeftBody p{
+    font-size: 13px;
+    color: #2b5278;
+    line-height: 25px;
+    font-weight: 300;
+  }
+  .eventSectionRight{
+    /* border: 2px solid red; */
+    width: 20%;
+    min-height: 100px;
+  }
+
+  .eventSectionRightTop{
+    /* border: 1px solid black; */
+    background-color: rgb(241, 244, 246);
+    /* border: 1px solid rgb(222, 218, 218); */
+    border-radius: 6px;
+    padding: 5px;
+    color: #2b5278;
+    height: 70px;
+    
+    
+  }
+
+  .eventSectionRightTopTitle p{
+    font-size: 11px;
+    margin-bottom: 7px;
+  }
+
+  .eventSectionRightTopBody{
+    text-align: center;
+    /* border: 2px solid red; */
+    height: 40px;
+    
+  }
+  .eventSectionRightTopBody h6{
+    /* border: 1px solid black; */
+    color: #003366;
+    font-size: 14px;
+    
+  }
+  .eventSectionRightTopBody p{
+    font-size: 11px;
+    margin-top: -5px;
+    /* border: 1px solid black; */
+
+  }
+  .eventSectionRightTopBody{
+    display: flex;
+    justify-content: space-around;
+  }
+
+
+  .eventSectionRightBottom{
+    /* border: 2px solid red; */
+   float: right;
+   
+    padding-top: 10px;
+
+  }
+
+  .Edit{
+    outline: none;
+    border: none;
+    margin-right: 10px;
+    height: 35px;
+    padding: 5px;
+    width: 50px;
+    text-align: center;
+        
+    border: 1px solid rgb(222, 218, 218);
+    border-radius: 5px;
+    font-size: 13px;
+    color: #003366;
+  }
+  .Details{
+    outline: none;
+    border: none;
+    height: 35px;
+    padding: 5px;
+    width: 60px;
+    text-align: center;
+        
+    border: 1px solid rgb(222, 218, 218);
+    border-radius: 5px;
+    font-size: 13px;
+    color: white;
+    background-color: #003366;
+  }
+
+  
+  .eventEdit1{
+    outline: none;
+    border: none;
+    margin-right: 10px;
+    height: 35px;
+    padding: 5px;
+    width: 90px;
+    text-align: center;
+        
+    border: 1px solid rgb(222, 218, 218);
+    border-radius: 5px;
+    font-size: 13px;
+    color: #003366;
+  }
+  .eventEdit2{
+    outline: none;
+    border: none;
+    
+    height: 35px;
+    padding: 5px;
+    width: 110px;
+    text-align: center;
+        
+    border: 1px solid rgb(222, 218, 218);
+    border-radius: 5px;
+    font-size: 13px;
+    color: #003366;
+  }
+
+
+  @media screen and (min-width: 900px) and (max-width: 1280px) {
+    /* Title area adjustments */
+    .eventtitle {
+      flex-direction: column;
+      align-items: flex-start;
+      height: auto;
+      gap: 10px;
+    }
+  
+    .eventtitleLeft {
+      width: 100%;
+      font-size: 22px;
+      text-align: left;
+    }
+  
+    .eventtitleRight {
+      width: 100%;
+      justify-content: flex-start;
+    }
+  
+    .eventtitleRight .eventbtn1 {
+      width: 160px;
+      font-size: 13px;
+      padding: 8px 12px;
+    }
+  
+    /* Search and Filter section */
+    .eventsMidTitle {
+      flex-direction: column;
+      height: auto;
+      gap: 10px;
+    }
+    .eventSectionLeftTitleRight button{
+        margin-left: 10px;
+        border: none;
+        outline: none;
+        font-size: 12px;
+        border-radius: 20px;
+        height: 25px;
+        width: 80px;
+        background-color: rgb(233, 255, 233);
+        color: rgb(7, 60, 7);
+        font-weight: 500;
+      }
+  
+    .eventsMidTitleLeft,
+    .eventsMidTitleRight {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  
+    #eventsSearch {
+      width: 100%;
+      font-size: 14px;
+    }
+  
+    #eventsConvertInto {
+      width: 100%;
+      font-size: 14px;
+    }
+  
+    /* Tab section */
+    .eventtabs {
+      width: 100%;
+      height: auto;
+      padding: 6px;
+      justify-content: space-between;
+    }
+  
+    .eventtabs button {
+      font-size: 14px;
+      height: 36px;
+    }
+  
+    /* Event cards */
+    .eventtab-content .eventsection {
+      flex-direction: column;
+    }
+  
+    .eventSectionLeft,
+    .eventSectionRight {
+      width: 100%;
+    }
+  
+    .eventSectionLeftTitle {
+      /* flex-direction: column; */
+      /* border: 2px solid red; */
+      
+      display: flex;
+      align-items: center;
+      
+    }
+  
+    .eventSectionLeftTitleRight {
+      margin-top: -10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+  
+    .eventSectionRightTopBody {
+      /* flex-direction: column; */
+      align-items: center;
+    }
+  
+    .eventSectionRightBottom {
+      float: none;
+      margin-top: 10px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+  
+    .Edit,
+    .Details,
+    .eventEdit1,
+    .eventEdit2 {
+      width: auto;
+      min-width: 90px;
+      padding: 6px 12px;
+    }
+  }
+  
+
+  @media screen and (min-width: 700px) and (max-width: 900px) {
+    /* Events container */
+    .eventtitle {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        gap: 10px;
+      }
+    
+      .eventtitleLeft {
+        width: 100%;
+        font-size: 22px;
+        text-align: left;
+      }
+    
+      .eventtitleRight {
+        width: 100%;
+        justify-content: flex-start;
+      }
+    
+      .eventtitleRight .eventbtn1 {
+        width: 160px;
+        font-size: 13px;
+        padding: 8px 12px;
+      }
+    
+      /* Search and Filter section */
+      .eventsMidTitle {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+      }
+      .eventSectionLeftTitleRight button{
+          
+          border: none;
+          outline: none;
+          font-size: 12px;
+          border-radius: 20px;
+          height: 25px;
+          width: 80px;
+          background-color: rgb(233, 255, 233);
+          color: rgb(7, 60, 7);
+          font-weight: 500;
+        }
+    
+      .eventsMidTitleLeft,
+      .eventsMidTitleRight {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+    
+      #eventsSearch {
+        width: 100%;
+        font-size: 14px;
+      }
+    
+      #eventsConvertInto {
+        width: 100%;
+        font-size: 14px;
+      }
+    
+      /* Tab section */
+      .eventtabs {
+        width: 100%;
+        height: auto;
+        padding: 6px;
+        justify-content: space-between;
+      }
+    
+      .eventtabs button {
+        font-size: 14px;
+        height: 36px;
+      }
+    
+      /* Event cards */
+      .eventtab-content .eventsection {
+        flex-direction: column;
+      }
+    
+      .eventSectionLeft,
+      .eventSectionRight {
+        width: 100%;
+      }
+    
+      .eventSectionLeftTitle {
+        flex-direction: column;
+        /* border: 2px solid red; */
+        
+        display: flex;
+        
+        align-items: center;
+        margin-bottom: 30px;
+        
+        
+      }
+    
+      .eventSectionLeftTitleRight {
+       
+        display: flex;
+        flex-wrap: wrap;
+        
+      }
+    
+      .eventSectionRightTopBody {
+        /* flex-direction: column; */
+        align-items: center;
+      }
+    
+      .eventSectionRightBottom {
+        float: none;
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+      }
+    
+      .Edit,
+      .Details,
+      .eventEdit1,
+      .eventEdit2 {
+        width: auto;
+        min-width: 90px;
+        padding: 6px 12px;
+      }
+  }
+  @media screen and (min-width: 580px) and (max-width: 700px) {
+    /* Events container */
+    .eventtitle {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        gap: 10px;
+      }
+    
+      .eventtitleLeft {
+        width: 100%;
+        font-size: 22px;
+        text-align: left;
+      }
+    
+      .eventtitleRight {
+        width: 100%;
+        justify-content: flex-start;
+      }
+    
+      .eventtitleRight .eventbtn1 {
+        width: 160px;
+        font-size: 13px;
+        padding: 8px 12px;
+      }
+    
+      /* Search and Filter section */
+      .eventsMidTitle {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+      }
+      .eventSectionLeftTitleRight button{
+          
+          border: none;
+          outline: none;
+          font-size: 12px;
+          border-radius: 20px;
+          height: 25px;
+          width: 80px;
+          background-color: rgb(233, 255, 233);
+          color: rgb(7, 60, 7);
+          font-weight: 500;
+        }
+    
+      .eventsMidTitleLeft,
+      .eventsMidTitleRight {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+    
+      #eventsSearch {
+        width: 100%;
+        font-size: 14px;
+      }
+    
+      #eventsConvertInto {
+        width: 100%;
+        font-size: 14px;
+      }
+    
+      /* Tab section */
+      .eventtabs {
+        width: 100%;
+        height: auto;
+        padding: 6px;
+        justify-content: space-between;
+      }
+    
+      .eventtabs button {
+        font-size: 14px;
+        height: 36px;
+      }
+    
+      /* Event cards */
+      .eventtab-content .eventsection {
+        flex-direction: column;
+      }
+    
+      .eventSectionLeft,
+      .eventSectionRight {
+        width: 100%;
+      }
+    
+      .eventSectionLeftTitle {
+        flex-direction: column;
+        /* border: 2px solid red; */
+        
+        display: flex;
+        
+        align-items: center;
+        margin-bottom: 30px;
+        
+        
+      }
+    
+      .eventSectionLeftTitleRight {
+       
+        display: flex;
+        flex-wrap: wrap;
+        
+      }
+    
+      .eventSectionRightTopBody {
+        /* flex-direction: column; */
+        align-items: center;
+      }
+    
+      .eventSectionRightBottom {
+        float: none;
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+      }
+    
+      .Edit,
+      .Details,
+      .eventEdit1,
+      .eventEdit2 {
+        width: auto;
+        min-width: 90px;
+        padding: 6px 12px;
+      }
+  }
+  
+  @media screen and (min-width: 375px) and (max-width: 580px) {
+    /* Events container */
+
+    .events{
+        background-color: rgb(248, 249, 250);
+        
+        
+    
+        padding: 10px;
+        
+        
+    }
+    .eventtitle {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        gap: 10px;
+      }
+    
+      .eventtitleLeft {
+        width: 100%;
+        font-size: 22px;
+        text-align: left;
+      }
+    
+      .eventtitleRight {
+        width: 100%;
+        justify-content: flex-start;
+      }
+    
+      .eventtitleRight .eventbtn1 {
+        width: 160px;
+        font-size: 13px;
+        padding: 8px 12px;
+      }
+    
+      /* Search and Filter section */
+      .eventsMidTitle {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        /* border: 2px solid red; */
+        
+      }
+      .eventSectionLeftTitleRight button{
+          
+          border: none;
+          outline: none;
+          font-size: 12px;
+          border-radius: 20px;
+          height: 25px;
+          width: 80px;
+          background-color: rgb(233, 255, 233);
+          color: rgb(7, 60, 7);
+          font-weight: 500;
+        }
+    
+      .eventsMidTitleLeft,
+      .eventsMidTitleRight {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 10px;
+        gap: 10px;
+      }
+    
+      #eventsSearch {
+        width: 100%;
+        font-size: 12px;
+      }
+    
+      #eventsConvertInto {
+        width: 100%;
+        font-size: 12px;
+      }
+    
+      /* Tab section */
+      .eventtabs {
+        width: 100%;
+        height: auto;
+        padding: 6px;
+        justify-content: space-between;
+      }
+    
+      .eventtabs button {
+        font-size: 12px;
+        height: 36px;
+      }
+    
+      /* Event cards */
+      .eventtab-content .eventsection {
+        flex-direction: column;
+      }
+    
+      .eventSectionLeft,
+      .eventSectionRight {
+        width: 100%;
+      }
+    
+      .eventSectionLeftTitle {
+        flex-direction: column;
+        /* border: 2px solid red; */
+        
+        display: flex;
+        
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        
+        
+      }
+      .eventSectionLeftTitleLeft p{
+        font-size: 10px;
+        /* border: 2px solid red; */
+      }
+
+      .eventSectionLeftBody p{
+        font-size: 10px;
+      }
+    
+      .eventSectionLeftTitleRight {
+       
+        display: flex;
+        flex-wrap: wrap;
+        
+      }
+    
+      .eventSectionRightTopBody {
+        /* flex-direction: column; */
+        align-items: center;
+      }
+    
+      .eventSectionRightBottom {
+        float: none;
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+      }
+    
+      .Edit{
+        width: 50px;
+        font-size: 10px;
+        height: 30px;
+      }
+      .Details{
+        width: 50px;
+        font-size: 10px;
+        height: 30px;
+      }
+      .eventEdit1{
+        width: 130px;
+        font-size: 10px;
+        height: 30px;
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+      .eventEdit2 {
+        width: 130px;
+        font-size: 10px;
+        height: 30px;
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+
+     
+
+      #ebtn1{
+        background-color: rgb(251, 251, 255);
+        color: rgb(15, 44, 87);
+        font-size: 10px;
+        font-weight: 500;
+    
+      }
+    
+      #ebtn2{
+        background-color: transparent;
+        color: rgb(143, 155, 172);
+        font-size: 10px;
+        font-weight: 500;
+        /* border: 2px solid red; */
+      }
+
+      .eventtabs button{
+        font-size: 10px;
+      }
+      .eventsMidBox{
+        padding: 10px;
+      }
+  }
+  
+
+  @media (max-width: 768px) {
+    .tabs {
+      flex-direction: column;
+    }
+  }
+
+
+
+  

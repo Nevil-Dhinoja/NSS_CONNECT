@@ -1,0 +1,76 @@
+.settings-container {
+    padding: 2rem;
+    max-width: 1480px;
+    margin: auto;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+.stitle {
+    margin: 15px;
+    color: #003366;
+  }
+  
+  .tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .tabs button {
+    background-color: #e4eaf0;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #003366;
+    font-weight: 600;
+  }
+  
+  .tabs .active {
+    background-color: #003366;
+    color: #fff;
+  }
+  
+  .tab-content .section {
+    background-color: #fff;
+    padding: 2rem;
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+  }
+  
+  .section label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+    font-weight: 500;
+  }
+  
+  .section input {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    background-color: #f5f8fa;
+  }
+  
+  .section input:disabled {
+    background-color: #eceff1;
+    cursor: not-allowed;
+  }
+  
+  .save-btn {
+    margin-top: 1.5rem;
+    background-color: #003366;
+    color: white;
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .tabs {
+      flex-direction: column;
+    }
+  }
+  

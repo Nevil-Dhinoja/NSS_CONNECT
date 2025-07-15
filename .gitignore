@@ -1,0 +1,63 @@
+node_modules/
+server/node_modules
+frontend/node_modules
+client/node_modules
+
+# Node.js
+node_modules/
+.env
+.env.local
+.env.development
+.env.production
+npm-debug.log*
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Runtime
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Build
+dist/
+build/
+
+# Coverage
+coverage/
+.nyc_output/
+
+# DB
+*.sqlite
+*.sqlite3
+*.db
+
+# System files
+.DS_Store
+Thumbs.db
+
+# React/Vite frontend
+Frontend/node_modules/
+Frontend/dist/
+Frontend/.vite/
+
+# VSCode & IDE
+.vscode/
+.idea/
+*.swp
+
+# Mac & Windows
+*.bak
+*.tmp
+*.orig
+*.rej
+
+# Git
+*.orig
+*.rej
+*.swo
+*.swp
+*.bak

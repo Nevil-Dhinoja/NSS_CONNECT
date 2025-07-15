@@ -1,0 +1,280 @@
+  /* Mission Page Styling */
+  .mission-Page {
+    font-family: Arial, sans-serif;
+    position: relative;
+    margin-top: 10px; /* Ensures it does not overlap with Home Page */
+    margin-bottom: -400px;
+  }
+  .MessageDesk{
+    background-color: #004b91;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 5px;
+    width: 71%;
+    margin-left: 14.5%;
+    margin-bottom: 1%;
+  }
+  /* Mission and Vision Containers */
+  .Mission-Container, .Vission-Container {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 30px auto;
+    width: 71%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .Titel h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #004b91;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .Missio-writeup p, .Vission-writeup p {
+    font-size: 25px;
+    color: #333;
+    line-height: 1.6;
+    
+  }
+
+  /* Messages Sections */
+  .msg-con {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 3%;
+    width: 75%;
+    margin: auto;
+    margin-left: 11.8%;
+  }
+
+  .msg-P-desk {
+    background-color: #f2f2f2;
+    padding: 11px;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;  /* Ensures three cards in one line */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .Msg-R-desk{
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    /* text-align: justify; */
+    width: 30%;  /* Ensures three cards in one line */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .Msg-PC-desk{
+    background-color: #f2f2f2;
+    padding: 11px;
+    padding-bottom: 35px;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;  /* Ensures three cards in one line */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .MsgPera{
+    font-size: 15px;
+    text-align: justify;
+  }
+  .Name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  /* Images inside message sections */
+  .Provost{
+    width: 120px;
+    height: 140px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid #004b91;
+  }
+  .RD{
+ 
+    width: 120px;
+    height: 140px;
+    margin-top: 5px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid #004b91;
+  }
+  .PCD {
+    
+    width: 120px;
+    height: 140px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid #004b91;
+  }
+  .Name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .DContainer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 30px Auto 25%; /* changed from 35% to fixed 50px bottom margin */
+    width: 72%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  @media (max-width: 768px) {
+    .DContainer {
+      margin-bottom: 120px; /* Add enough space below to avoid overlap */
+    }
+  }
+
+  .Name{
+    font-size: 1.5em;
+
+  }
+  .DTitle{
+    font-size: 40px;
+    font-weight: bold;
+    color: #004b91;
+    text-align: center;
+  }
+  .DutyDescription p{
+    font-size: 25px;
+    text-align: justify;
+  }
+  .footer-container {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    width: 73%;
+    margin-bottom: -200px;
+  }
+  .contact-info, .quick-links {
+    text-align: start;
+    color: #007bff;
+    width: 50%;
+  }
+  .info-item {
+    display: flex;
+    align-items: start;
+    margin: 10px 0;
+  } 
+  .icon {
+    padding-top: 12px;
+    font-size: 1.9em;
+    color: #007bff;
+    margin-right: 10px;
+  }
+  .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .social-icon {
+    font-size: 1.5em;
+    color: #007bff;
+    cursor: pointer;
+  }
+
+  .quick-links ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .quick-links li {
+    margin: 10px 0;
+  }
+
+  .quick-links a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  /* responsive */
+  @media (max-width: 768px) {
+    *{
+      font-size: 12px;
+    }
+    .Msg {
+      flex-direction: column;
+      text-align: center;
+      
+    }
+    .Msg p,.DutyDescription {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+    @media (max-width: 768px) {
+      .msg-con {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; /* Add vertical spacing between stacked cards */
+      }
+    
+      .msg-P-desk,
+      .Msg-R-desk,
+      .Msg-PC-desk {
+        width: 90%; /* Make cards take up more width when stacked */
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-info, .quick-links {
+        width: 100%;
+        margin-bottom: 20px; /* Adds spacing between sections */
+    }
+
+    .info-item {
+        justify-content: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .icon,
+    .social-icon {
+        font-size: 1.2em;
+    }
+  }
+  @media (max-width: 1024px) {
+    .msg-con {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .msg-P-desk, .Msg-R-desk, .Msg-PC-desk {
+      width: 80%;
+    }
+  }
+  @media (max-width: 768px) {
+    .mission-Page {
+      margin-bottom: 0px;
+    }
+  }

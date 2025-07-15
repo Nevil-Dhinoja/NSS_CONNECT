@@ -1,0 +1,514 @@
+.volunteers{
+    background-color: rgb(248, 249, 250);
+    
+    
+
+    padding: 25px;
+    
+    
+}
+
+.title{
+    
+
+    color: rgb(15, 44, 87);
+    display: flex;
+    height: 50px;
+}
+
+.titleLeft{
+        width: 65%;
+        font-size: 23px;
+        font-weight: 600;
+
+}
+
+.titleRight{
+    width: 35%;
+
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+
+}
+.titleRight .btn1{
+    width: 48%;
+    height: 90%;
+    color: white;
+    background-color: rgb(15, 44, 87);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+.titleRight .btn1 span{
+    margin-right: 10px;
+    font-size: 15px;
+    
+    
+}
+.titleRight .btn2{
+    font-size: 13px;
+    width: 48%;
+    height: 90%;
+    color: rgb(15, 44, 87);
+    background-color: transparent;
+    border: 1px solid rgb(222, 218, 218);
+    outline: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleRight .btn2 span{
+    margin-right: 10px;
+    font-size: 15px;
+    
+    
+}
+
+.volunteersMidBox{
+    border: 1px solid rgb(222, 218, 218);
+    min-height: 200px;
+    margin-top: 70px;
+    border-radius: 7px;
+    background-color: white;
+    padding: 20px;
+    /* border: 2px solid red; */
+
+}
+
+.volunteersMidTitle{
+  
+    height: 40px;
+    display: flex;
+    /* border: 2px solid red; */
+}
+
+.volunteersMidTitleLeft{
+ 
+    width: 36%;
+    display: flex;
+    align-items: center;
+   
+    
+}
+.volunteersMidTitleLeft h3{
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(15, 44, 87);
+}
+.volunteersMidTitleLeft span{
+    font-size: 23px;
+    color: rgb(15, 44, 87);
+}
+.volunteersMidTitleRight{
+ 
+    display: flex;
+    flex-direction: row-reverse;
+    width: 64%;
+}
+
+#AllYears{
+    border: 1px solid rgb(222, 218, 218);
+    border-radius: 6px;
+    height: 90%;
+    width: 150px;
+    color: rgb(74, 76, 77);
+    background-color: rgb(248, 249, 250);
+    padding: 10px;
+    font-size: 13px;
+}
+#AllDepartments{
+    border: 1px solid rgb(222, 218, 218);
+    border-radius: 6px;
+    height: 90%;
+    width: 200px;
+    color: rgb(74, 76, 77);
+    background-color: rgb(248, 249, 250);
+    padding: 10px;
+    font-size: 13px;
+    margin-left: 10px;
+}
+#ConvertInto{
+    border: 1px solid rgb(222, 218, 218);
+    border-radius: 6px;
+    height: 90%;
+    width: 50px;
+    color: rgb(74, 76, 77);
+    background-color: rgb(248, 249, 250);
+    padding: 10px;
+    font-size: 13px;
+    margin-left: 10px;
+}
+#VolunteersSearch{
+    border: 1px solid rgb(222, 218, 218);
+    border-radius: 6px;
+    height: 90%;
+    width: 300px;
+    color: rgb(74, 76, 77);
+    background-color: rgb(248, 249, 250);
+    padding: 10px;
+    font-size: 13px;
+    margin-left: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.volunteersMidBoxMid{
+    border: 1px solid rgb(222, 218, 218);
+    border-radius: 7px;
+    margin-top: 20px;
+    min-height: 200px;
+}
+
+.detailsTitle{
+    border-bottom: 1px solid rgb(222, 218, 218);
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+    align-items: center;
+}
+.details{
+    border-bottom: 1px solid rgb(222, 218, 218);
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    align-items: center;
+}
+
+.vname{
+    /* border: 1px solid black; */
+    width: 17%;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(89, 103, 113);
+}
+.vid{
+    /* border: 1px solid black; */
+    width: 13%;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(89, 103, 113);
+}
+.vdepartment{
+    /* border: 1px solid black; */
+    width: 20%;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(89, 103, 113);
+}
+.vyear{
+    /* border: 1px solid black; */
+    width: 10%;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(89, 103, 113);
+}
+.vcontact{
+    /* border: 1px solid black; */
+    width: 17%;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(89, 103, 113);
+}
+.vjoined{
+    /* border: 1px solid black; */
+    width: 13%;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(89, 103, 113);
+}
+.vname1{
+    /* border: 1px solid black; */
+    width: 17%;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(14, 16, 59);
+}
+.vid1{
+    /* border: 1px solid black; */
+    width: 13%;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(54, 61, 65);
+}
+.vdepartment1{
+    /* border: 1px solid black; */
+    width: 20%;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(54, 61, 65);
+}
+.vyear1{
+    /* border: 1px solid black; */
+    width: 10%;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(54, 61, 65);
+}
+.vcontact1{
+    /* border: 1px solid black; */
+    width: 17%;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(54, 61, 65);
+}
+.vjoined1{
+    /* border: 1px solid black; */
+    width: 13%;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(54, 61, 65);
+}
+
+
+
+
+
+  /* For screens between 900px and 1200px */
+@media (max-width: 1280px) and (min-width: 900px) {
+    .title {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .titleLeft,
+    .titleRight {
+      width: 100%;
+      margin-bottom: 10px;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .titleRight .btn1,
+    .titleRight .btn2 {
+      width: 27%;
+      margin: 5px;
+      height: 40px;
+    }
+  
+    .volunteersMidBoxMid{
+        margin-top: 70px;
+    }
+    .volunteersMidTitle {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .volunteersMidTitleLeft,
+    .volunteersMidTitleRight {
+      width: 100%;
+    }
+  
+    #VolunteersSearch,
+    #AllDepartments,
+    #AllYears,
+    #ConvertInto {
+      width: 100%;
+      
+      margin-right: 20px;
+    }
+  
+    .detailsTitle{
+        display: none;
+    }
+    .details {
+        
+      flex-wrap: wrap;
+      font-size: 12px;
+      height: 150px;
+    }
+  
+    .vname,
+    .vid,
+    .vdepartment,
+    .vyear,
+    .vcontact,
+    .vjoined,
+    .vname1,
+    .vid1,
+    .vdepartment1,
+    .vyear1,
+    .vcontact1,
+    .vjoined1 {
+      width: 45%;
+      margin: 5px 0;
+    }
+  }
+  
+
+  @media (max-width: 900px) and (min-width: 700px) {
+    .title {
+        flex-direction: column;
+        height: auto;
+      }
+    
+      .titleLeft,
+      .titleRight {
+        width: 100%;
+        margin-bottom: 10px;
+        justify-content: center;
+        text-align: center;
+      }
+    
+      .titleRight .btn1,
+      .titleRight .btn2 {
+        width: 36%;
+        margin: 5px;
+        height: 40px;
+      }
+    
+      .volunteersMidBoxMid{
+          margin-top: 70px;
+      }
+      .volunteersMidTitle {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+    
+      .volunteersMidTitleLeft,
+      .volunteersMidTitleRight {
+        width: 100%;
+      }
+    
+      #VolunteersSearch,
+      #AllDepartments,
+      #AllYears,
+      #ConvertInto {
+        width: 100%;
+        
+        margin-right: 20px;
+      }
+    
+      .detailsTitle{
+          display: none;
+      }
+      .details {
+          
+        flex-wrap: wrap;
+        font-size: 12px;
+        height: 150px;
+      }
+    
+      .vname,
+      .vid,
+      .vdepartment,
+      .vyear,
+      .vcontact,
+      .vjoined,
+      .vname1,
+      .vid1,
+      .vdepartment1,
+      .vyear1,
+      .vcontact1,
+      .vjoined1 {
+        width: 45%;
+        margin: 5px 0;
+      }
+
+
+
+  }
+  @media screen and (min-width: 375px) and (max-width: 700px) {
+    /* Title Section */
+    .title {
+      flex-direction: column;
+      height: auto;
+      align-items: center;
+      text-align: center;
+      gap: 1px;
+      /* border: 2px solid red; */
+    }
+  
+    .titleLeft,
+    .titleRight {
+      width: 100%;
+      margin-bottom: 10px;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .titleRight .btn1,
+    .titleRight .btn2 {
+      width: 70%;
+      min-width: 120px;
+      height: 40px;
+      margin: 5px;
+      font-size: 11px;
+    }
+  
+    /* Filter Section */
+    .volunteersMidBoxMid {
+      margin-top: 10px;
+    }
+  
+    .volunteersMidTitle {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 1px;
+    }
+  
+    .volunteersMidTitleLeft,
+    .volunteersMidTitleRight {
+      width: 100%;
+    }
+  
+    #VolunteersSearch,
+    #AllDepartments,
+    #AllYears,
+    #ConvertInto {
+      
+      display: none;
+
+    }
+  
+    /* Hide table headers */
+    .detailsTitle {
+      display: none;
+    }
+  
+    /* Data Cards */
+    .details {
+      flex-wrap: wrap;
+      font-size: 10px;
+      height: auto;
+      padding: 10px;
+      background-color: #f8f9fa;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.05);
+    }
+  
+    .vname,
+    .vid,
+    .vdepartment,
+    .vyear,
+    .vcontact,
+    .vjoined,
+    .vname1,
+    .vid1,
+    .vdepartment1,
+    .vyear1,
+    .vcontact1,
+    .vjoined1 {
+      width: 48%;
+      margin: 5px 0;
+      word-break: break-word;
+      font-size: 11px;
+    }
+  }
+
+
+  
+  
+  /* For screens between 1201px and 1530px */

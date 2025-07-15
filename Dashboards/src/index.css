@@ -1,0 +1,217 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 50% 98%;
+    --foreground: 215 25% 27%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 27%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 27%;
+
+    --primary: 220 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 40% 85%;
+    --secondary-foreground: 215 25% 27%;
+
+    --muted: 220 20% 94%;
+    --muted-foreground: 215 25% 40%;
+
+    --accent: 210 75% 95%;
+    --accent-foreground: 215 71% 20%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 220 100% 50%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 215 71% 20%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 220 100% 50%;
+    --sidebar-primary-foreground: 215 25% 27%;
+    --sidebar-accent: 215 60% 25%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 215 60% 25%;
+    --sidebar-ring: 220 100% 50%;
+  }
+
+  .dark {
+    --background: 215 32% 10%;
+    --foreground: 210 40% 98%;
+
+    --card: 215 35% 15%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 215 35% 15%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 220 100% 60%;
+    --primary-foreground: 215 25% 27%;
+
+    --secondary: 210 40% 85%;
+    --secondary-foreground: 215 25% 27%;
+
+    --muted: 215 35% 20%;
+    --muted-foreground: 210 40% 80%;
+
+    --accent: 215 60% 25%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 215 35% 20%;
+    --input: 215 35% 20%;
+    --ring: 220 100% 60%;
+
+    --sidebar-background: 215 35% 8%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 220 100% 60%;
+    --sidebar-primary-foreground: 215 25% 27%;
+    --sidebar-accent: 215 35% 20%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 215 35% 20%;
+    --sidebar-ring: 220 100% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* Enhanced UI Components */
+.nss-input {
+  @apply w-full rounded-lg border-2 border-gray-200 bg-white px-4 py-3 text-sm text-gray-900 ring-offset-background placeholder:text-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:border-blue-500 disabled:cursor-not-allowed disabled:opacity-50 transition-all duration-200;
+}
+
+.nss-card {
+  @apply rounded-xl border border-gray-200 bg-white text-gray-900 shadow-lg hover:shadow-xl transition-all duration-300;
+}
+
+.nss-dashboard-card {
+  @apply p-6 rounded-xl border border-gray-200 bg-white hover:shadow-xl hover:border-blue-200 hover:bg-blue-50/30;
+}
+
+/* Button Styles with Better Contrast */
+.nss-button-primary {
+  @apply bg-blue-600 text-white hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 px-6 py-3 rounded-lg font-semibold shadow-md hover:shadow-lg;
+}
+
+.nss-button-secondary {
+  @apply bg-orange-500 text-white hover:bg-orange-600 active:bg-orange-700 transition-all duration-200 px-6 py-3 rounded-lg font-semibold shadow-md hover:shadow-lg;
+}
+
+.nss-button-outline {
+  @apply border-2 border-blue-600 text-blue-600 bg-white hover:bg-blue-600 hover:text-white transition-all duration-200 px-6 py-3 rounded-lg font-semibold;
+}
+
+.nss-button-success {
+  @apply bg-green-600 text-white hover:bg-green-700 active:bg-green-800 transition-all duration-200 px-4 py-2 rounded-lg font-medium shadow-md hover:shadow-lg;
+}
+
+.nss-button-danger {
+  @apply bg-red-600 text-white hover:bg-red-700 active:bg-red-800 transition-all duration-200 px-4 py-2 rounded-lg font-medium shadow-md hover:shadow-lg;
+}
+
+/* Enhanced Card Styles */
+.profile-card {
+  @apply bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300;
+}
+
+.stats-card {
+  @apply bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl shadow-md border border-blue-200 hover:shadow-lg transition-all duration-300;
+}
+
+/* Login Page Specific Styles */
+.login-container {
+  @apply min-h-screen bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 flex items-center justify-center p-4;
+}
+
+.login-card {
+  @apply bg-white rounded-2xl shadow-2xl border-0 overflow-hidden max-w-md w-full;
+}
+
+.login-header {
+  @apply bg-gradient-to-r from-blue-600 to-blue-700 text-white p-8 text-center;
+}
+
+.login-content {
+  @apply p-8;
+}
+
+/* Table Styles */
+.nss-table {
+  @apply w-full border-collapse border border-gray-200 rounded-lg overflow-hidden;
+}
+
+.nss-table th {
+  @apply bg-gray-100 text-gray-900 font-semibold p-4 text-left border-b border-gray-200;
+}
+
+.nss-table td {
+  @apply p-4 border-b border-gray-100 text-gray-700;
+}
+
+.nss-table tr:hover {
+  @apply bg-gray-50;
+}
+
+/* Status Badges */
+.status-approved {
+  @apply bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium;
+}
+
+.status-pending {
+  @apply bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-xs font-medium;
+}
+
+.status-rejected {
+  @apply bg-red-100 text-red-800 px-3 py-1 rounded-full text-xs font-medium;
+}
+
+/* Animation Classes */
+.fade-in {
+  @apply animate-fade-in;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fix for potential CSS conflicts */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure proper font rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

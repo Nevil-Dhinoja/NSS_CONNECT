@@ -1,0 +1,265 @@
+.com{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.photoGallary{
+    max-height: 300px;
+    width: 90%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+ 
+
+  }
+
+  .photoGallary img{
+    height: 80%;
+    width: 90%;
+    border-radius: 20px;
+  }
+
+  .Statistics{
+    max-height: 300px;
+    width: 90%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+
+  }
+
+  .Statistics img{
+    height: 80%;
+    width: 90%;
+    border-radius: 20px;
+
+  }
+
+  .campus-container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .campus-header {
+    background-color: #ff6600;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  .campus-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .campus-button {
+    background-color: #0765a5;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .campus-button:hover {
+    background-color: #002244;
+  }
+/* Modal Styles */
+.modal-overlay {
+  /* position:fixed;
+  Bottom: -15%;
+  padding: 30%;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-bottom: 25%;
+  padding: 30%;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.modal-content {
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 25%;
+}
+.modal-single {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-image {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.modal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+
+.initiatives-container {
+  width: 80%;
+  height: 20%;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  /* border: 2px solid red; */
+  margin-bottom: 30px;
+}
+
+.initiatives-header {
+  background-color: #ff6600;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+.initiatives-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.initiative-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.initiative-card:hover {
+  transform: scale(1.05);
+}
+
+.initiative-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.initiative-title {
+  background-color: #0765a5;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px;
+  text-align: center;
+}
+.AchivementsPoints{
+  margin-top:45px;
+  font-size: 26px;
+  text-align: justify;
+}
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .campus-container, .initiatives-container {
+    width: 95%;
+    padding: 1.5rem;
+  }
+
+  .campus-header, .initiatives-header {
+    font-size: 1.5rem;
+  }
+
+  .campus-button {
+    font-size: 1.2rem;
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .campus-grid, .modal-grid, .initiatives-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .photoGallary, .Statistics {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .photoGallary img, .Statistics img {
+    width: 100%;
+    height: auto;
+  }
+
+  .modal-content {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .close-button {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .AchivementsPoints {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .campus-header, .initiatives-header {
+    font-size: 1.3rem;
+    padding: 0.8rem;
+  }
+
+  .campus-button {
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+
+  .modal-content {
+    width: 95%;
+  }
+
+  .close-button {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+
+  .AchivementsPoints {
+    font-size: 1rem;
+    padding: 0 5%;
+  }
+}

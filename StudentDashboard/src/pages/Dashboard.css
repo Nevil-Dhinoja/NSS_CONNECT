@@ -1,0 +1,344 @@
+/* Dashboard.css */
+.dashboard-container {
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  /* Header layout: Title and Add Button */
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #003366;
+    margin: 10px 0;
+  }
+  
+  .add-hours-button {
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-hours-button i {
+    font-size: 18px;
+  }
+  
+  .add-hours-button:hover {
+    background-color: #002244;
+  }
+  
+  /* Cards layout */
+  .dashboard-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    flex: 1 1 250px;
+    min-width: 260px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Card titles */
+  .card-title {
+    font-weight: 600;
+    color: #003366;
+    font-size: 16px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  /* Progress Bar */
+  .progress-bar {
+    background-color: #e0e0e0;
+    height: 8px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 8px;
+  }
+  
+  .progress-filled {
+    background-color: orange;
+    height: 100%;
+    border-radius: 5px 0 0 5px;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .progress-info {
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 4px;
+  }
+  
+  .progress-note {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .card-value {
+    font-size: 26px;
+    font-weight: bold;
+    color: #003366;
+  }
+  
+  .recent-working-hours {
+    margin-top: 30px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+    overflow-x: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .recent-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .recent-header h3 {
+    font-size: 18px;
+    margin: 0;
+    flex-shrink: 0;
+  }
+  
+  .view-all {
+    font-size: 14px;
+    color: #003366;
+    text-decoration: none;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  
+  .working-hours-table {
+    width: 100%;
+    min-width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto;
+  }
+  
+  .working-hours-table th,
+  .working-hours-table td {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .working-hours-table th {
+    background-color: #f1f3f6;
+    font-weight: bold;
+    color: #003366;
+  }
+  
+  .working-hours-table td {
+    border-bottom: 1px solid #eee;
+    color: #333;
+  }
+  
+  .status {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    display: inline-block;
+  }
+  
+  .status.approved {
+    background-color: #d4f5d4;
+    color: green;
+  }
+  
+  .status.pending {
+    background-color: #ffecb3;
+    color: #cc7a00;
+  }
+  
+  /* Tablet & Below */
+  @media (max-width: 768px) {
+    .recent-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .view-all {
+      align-self: flex-end;
+    }
+  
+    .working-hours-table {
+      display: block;
+      width: 100%;
+      overflow-x: auto;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 480px) {
+    .recent-working-hours {
+      padding: 15px;
+    }
+  
+    .recent-header h3 {
+      font-size: 16px;
+    }
+  
+    .view-all {
+      font-size: 13px;
+    }
+  
+    .working-hours-table th,
+    .working-hours-table td {
+      padding: 10px;
+      font-size: 13px;
+    }
+  
+    .status {
+      font-size: 11px;
+      padding: 3px 8px;
+    }
+  }
+    
+  /* Base styles for the upcoming events section */
+.upcoming-events {
+    padding: 1rem;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+  }
+  
+  /* Header styling */
+  .recent-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .recent-header h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #003366; /* Dark gray color for the "Upcoming Events" title */
+  }
+  
+  .view-all {
+    font-size: 0.9rem;
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .view-all:hover {
+    text-decoration: underline;
+  }
+  
+  /* Event cards container */
+  .event-cards {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  /* Individual event card */
+  .event-card {
+    background-color: #ffffff; /* White background for both cards, matching the image */
+    border: 1px solid #e0e0e0;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    flex: 1;
+    min-width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .event-card h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333333; /* Dark gray color for event titles, matching the image */
+    margin-bottom: 0.75rem;
+  }
+  
+  .event-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  /* Font Awesome icons styling */
+  .event-card p i {
+    color: #1e90ff;
+  }
+  
+  /* View Details button */
+  .view-details-button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: 1px solid #1e90ff;
+    border-radius: 0.25rem;
+    color: #1e90ff;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-details-button:hover {
+    background-color: #1e90ff;
+    color: #fff;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .event-card {
+      min-width: 100%;
+    }
+  
+    .recent-header h3 {
+      font-size: 1.25rem;
+    }
+  
+    .view-all {
+      font-size: 0.85rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .upcoming-events {
+      padding: 0.5rem;
+    }
+  
+    .event-card {
+      padding: 1rem;
+    }
+  
+    .recent-header {
+      margin-bottom: 1rem;
+    }
+  }

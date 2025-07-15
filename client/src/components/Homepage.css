@@ -1,0 +1,215 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background: white;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Full-screen background */
+.background-container {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-container img {
+  position: absolute;
+  margin-left: -17px;
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.background-container img.active {
+  opacity: 1;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 500px;
+  overflow-x: hidden;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 10px 5%;
+  color: #004a99;
+  position: fixed;
+  font-size: 1.2em;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.charusat-logo {
+  width: 15%;
+  max-width: 120px;
+}
+
+.nSs-logo {
+  width: 4%;
+  max-width: 50px;
+  margin-left: 10px;
+}
+
+.highlight {
+  color: #f8d210;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin-left: auto;
+}
+
+.nav-links li a {
+  color: #004a99;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #f8d210;
+}
+
+.sign-in {
+  background: #004a99;
+  color: white;
+  padding: 10px 20px;
+  margin-left: 3%;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background 0.3s;
+}
+
+.sign-in:hover {
+  background: #f8d210;
+  color: #004a99;
+}
+
+/* Welcome Section */
+.welcome-section {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 5%;
+  z-index: 2;
+}
+
+.pera {
+  text-align: justify;
+  font-size: 1.2em;
+}
+
+.text-section {
+  width: 100%;
+  max-width: 600px;
+}
+
+@media (max-width: 1024px) {
+  .nav-links {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 5%;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    width: 200px;
+    background: #004a99;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li a {
+    color: white;
+  }
+
+  .welcome-section {
+    width: 60%;
+    font-size: 1.5em;
+    padding: 20px;
+    margin-left: 15%;
+  }
+
+  .charusat-logo {
+    width: 20%;
+  }
+
+  .nss-logo {
+    width: 6%;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-section {
+    font-size: 1.2em;
+    padding: 15px;
+  }
+
+  .sign-in {
+    padding: 8px 15px;
+    font-size: 0.9em;
+  }
+
+  .charusat-logo {
+    width: 25%;
+  }
+
+  .nss-logo {
+    width: 8%;
+  }
+}
