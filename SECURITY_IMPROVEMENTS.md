@@ -45,9 +45,9 @@ This document outlines all security improvements made to the NSS CHARUSAT projec
 
 ### Client (.env file in client directory)
 ```env
-REACT_APP_DASHBOARD_URL=http://localhost:8080/
+REACT_APP_DASHBOARD_URL=http://172.16.11.213:8080/
 REACT_APP_DRIVE_LINK=https://drive.google.com/drive/folders/1zbPXPL_5Eh6O0j4-vXirgdYDpAgVHX0T
-REACT_APP_API_BASE_URL=http://localhost:5000/api
+REACT_APP_API_BASE_URL=http://172.16.11.213:5000/api
 ```
 
 ### Server (.env file in server directory)
@@ -55,7 +55,7 @@ REACT_APP_API_BASE_URL=http://localhost:5000/api
 JWT_SECRET=your-secure-jwt-secret-here
 EMAIL_USER=your-email@gmail.com
 EMAIL_PASSWORD=your-app-password
-FRONTEND_URL=http://localhost:3000
+FRONTEND_URL=http://172.16.11.213:3000
 ```
 
 ## Security Checklist Completed

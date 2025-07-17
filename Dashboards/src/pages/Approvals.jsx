@@ -85,7 +85,7 @@ const Approvals = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/api/working-hours/all", {
+      const response = await fetch("http://172.16.11.213:5000/api/working-hours/all", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -126,7 +126,7 @@ const Approvals = () => {
   const fetchReports = async () => {
     const token = localStorage.getItem("nssUserToken");
     try {
-      const response = await fetch("http://localhost:5000/api/events/reports", {
+      const response = await fetch("http://172.16.11.213:5000/api/events/reports", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -180,7 +180,7 @@ const Approvals = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:5000/api/events/reports/${selectedReport.id}/status`, {
+      const response = await fetch(`http://172.16.11.213:5000/api/events/reports/${selectedReport.id}/status`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -229,7 +229,7 @@ const Approvals = () => {
   const downloadReport = async (reportId) => {
     const token = localStorage.getItem("nssUserToken");
     try {
-      const response = await fetch(`http://localhost:5000/api/events/reports/${reportId}/download`, {
+      const response = await fetch(`http://172.16.11.213:5000/api/events/reports/${reportId}/download`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -286,8 +286,8 @@ const Approvals = () => {
 
     try {
       const endpoint = action === "approve" 
-        ? `http://localhost:5000/api/working-hours/approve/${id}`
-        : `http://localhost:5000/api/working-hours/reject/${id}`;
+        ? `http://172.16.11.213:5000/api/working-hours/approve/${id}`
+        : `http://172.16.11.213:5000/api/working-hours/reject/${id}`;
 
       const response = await fetch(endpoint, {
         method: "PUT",

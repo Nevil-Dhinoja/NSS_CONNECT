@@ -49,7 +49,7 @@ const WorkingHoursApproval = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/api/working-hours/all", {
+      const response = await fetch("http://172.16.11.213:5000/api/working-hours/all", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -132,7 +132,7 @@ const WorkingHoursApproval = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:5000/api/working-hours/approve/${id}`, {
+      const response = await fetch(`http://172.16.11.213:5000/api/working-hours/approve/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -178,7 +178,7 @@ const WorkingHoursApproval = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:5000/api/working-hours/reject/${id}`, {
+      const response = await fetch(`http://172.16.11.213:5000/api/working-hours/reject/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

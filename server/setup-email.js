@@ -39,4 +39,4 @@ if (fs.existsSync(envPath)) {
 // Example .env file content:
 // EMAIL_USER=d24dce147@charusat.edu.in
 // EMAIL_PASSWORD=abcd efgh ijkl mnop
-// FRONTEND_URL=http://localhost:3000 
+// FRONTEND_URL=http://172.16.11.213:3000 

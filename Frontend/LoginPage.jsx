@@ -204,7 +204,7 @@ import { useEffect } from "react";
 
 function LoginPage() {
   useEffect(() => {
-    window.location.href = process.env.REACT_APP_DASHBOARD_URL || "http://localhost:8080/"; // your dashboard app's login
+    window.location.href = process.env.REACT_APP_DASHBOARD_URL || "http://172.16.11.213:8080/"; // your dashboard app's login
   }, []);
 
   return <p>Redirecting to NSS Dashboard Login...</p>;

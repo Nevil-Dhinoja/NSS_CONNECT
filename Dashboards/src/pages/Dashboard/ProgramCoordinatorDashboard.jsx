@@ -60,32 +60,32 @@ const ProgramCoordinatorDashboard = () => {
   const fetchStats = async (token) => {
     try {
       // Fetch program officers count
-      const poResponse = await fetch("http://localhost:5000/api/auth/users/Program%20Officer", {
+      const poResponse = await fetch("http://172.16.11.213:5000/api/auth/users/Program%20Officer", {
         headers: { Authorization: `Bearer ${token}` }
       });
       const programOfficers = await poResponse.json();
       
       // Fetch student coordinators count
-      const scResponse = await fetch("http://localhost:5000/api/auth/users/Student%20Coordinator", {
+      const scResponse = await fetch("http://172.16.11.213:5000/api/auth/users/Student%20Coordinator", {
         headers: { Authorization: `Bearer ${token}` }
       });
       const studentCoordinators = await scResponse.json();
       
       // Fetch volunteers count
-      const volResponse = await fetch("http://localhost:5000/api/volunteers/all", {
+      const volResponse = await fetch("http://172.16.11.213:5000/api/volunteers/all", {
         headers: { Authorization: `Bearer ${token}` }
       });
       const volunteers = await volResponse.json();
       
       // Fetch reports count (approved by PO, excluding PC-submitted reports)
-      const reportsResponse = await fetch("http://localhost:5000/api/events/reports", {
+      const reportsResponse = await fetch("http://172.16.11.213:5000/api/events/reports", {
         headers: { Authorization: `Bearer ${token}` }
       });
       const reports = await reportsResponse.json();
       const approvedReports = reports.filter(report => report.status === 'approved');
       
       // Fetch events count (excluding PC-created events for regular count)
-      const eventsResponse = await fetch("http://localhost:5000/api/events/all", {
+      const eventsResponse = await fetch("http://172.16.11.213:5000/api/events/all", {
         headers: { Authorization: `Bearer ${token}` }
       });
       const events = await eventsResponse.json();
@@ -117,7 +117,7 @@ const ProgramCoordinatorDashboard = () => {
 
   const fetchReportsSubmitted = async (token) => {
     try {
-      const response = await fetch("http://localhost:5000/api/events/reports", {
+      const response = await fetch("http://172.16.11.213:5000/api/events/reports", {
         headers: { Authorization: `Bearer ${token}` }
       });
       const reports = await response.json();
@@ -144,7 +144,7 @@ const ProgramCoordinatorDashboard = () => {
 
   const fetchRecentEvents = async (token) => {
     try {
-      const response = await fetch("http://localhost:5000/api/events/all", {
+      const response = await fetch("http://172.16.11.213:5000/api/events/all", {
         headers: { Authorization: `Bearer ${token}` }
       });
       const events = await response.json();

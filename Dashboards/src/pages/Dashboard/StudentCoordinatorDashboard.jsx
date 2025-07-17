@@ -50,7 +50,7 @@ const StudentCoordinatorDashboard = ({ isHeadCoordinator = false }) => {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/api/working-hours/my-hours", {
+      const response = await fetch("http://172.16.11.213:5000/api/working-hours/my-hours", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -92,7 +92,7 @@ const StudentCoordinatorDashboard = ({ isHeadCoordinator = false }) => {
   // const fetchRecentEvents = async () => {
   //   const token = localStorage.getItem("nssUserToken");
   //   try {
-  //     const eventsRes = await fetch("http://localhost:5000/api/events/recent", {
+  //     const eventsRes = await fetch("http://172.16.11.213:5000/api/events/recent", {
   //       headers: { Authorization: `Bearer ${token}` },
   //     });
   //     if (eventsRes.ok) {
@@ -109,7 +109,7 @@ const StudentCoordinatorDashboard = ({ isHeadCoordinator = false }) => {
   const fetchRecentReports = async () => {
     const token = localStorage.getItem("nssUserToken");
     try {
-      const reportsRes = await fetch("http://localhost:5000/api/events/reports", {
+      const reportsRes = await fetch("http://172.16.11.213:5000/api/events/reports", {
         headers: { Authorization: `Bearer ${token}` },
       });
       if (reportsRes.ok) {
@@ -126,7 +126,7 @@ const StudentCoordinatorDashboard = ({ isHeadCoordinator = false }) => {
   const fetchDepartmentEvents = async () => {
     const token = localStorage.getItem("nssUserToken");
     if (!token || userRole !== 'sc' && userRole !== 'student coordinator' || !userDepartment) return;
-    const endpoint = `http://localhost:5000/api/events/department/${encodeURIComponent(userDepartment)}`;
+    const endpoint = `http://172.16.11.213:5000/api/events/department/${encodeURIComponent(userDepartment)}`;
     const response = await fetch(endpoint, {
       headers: { Authorization: `Bearer ${token}` },
     });
@@ -139,7 +139,7 @@ const StudentCoordinatorDashboard = ({ isHeadCoordinator = false }) => {
   const fetchSubmittedReports = async () => {
     const token = localStorage.getItem("nssUserToken");
     if (!token || userRole !== 'sc' && userRole !== 'student coordinator') return;
-    const res = await fetch("http://localhost:5000/api/events/reports", {
+    const res = await fetch("http://172.16.11.213:5000/api/events/reports", {
       headers: { Authorization: `Bearer ${token}` },
     });
     if (res.ok) {

@@ -148,7 +148,7 @@ const StudentLeaders = () => {
     try {
       // Fetch all student coordinators
       const roleName = encodeURIComponent("Student Coordinator");
-      const response = await fetch(`http://localhost:5000/api/auth/users/${roleName}`, {
+      const response = await fetch(`http://172.16.11.213:5000/api/auth/users/${roleName}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -198,7 +198,7 @@ const StudentLeaders = () => {
   const fetchInstitutes = async () => {
     const token = localStorage.getItem("nssUserToken");
     try {
-      const response = await fetch("http://localhost:5000/api/auth/institutes", {
+      const response = await fetch("http://172.16.11.213:5000/api/auth/institutes", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -232,7 +232,7 @@ const StudentLeaders = () => {
 
     const token = localStorage.getItem("nssUserToken");
     try {
-      const response = await fetch(`http://localhost:5000/api/auth/departments/${instituteId}`, {
+      const response = await fetch(`http://172.16.11.213:5000/api/auth/departments/${instituteId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -319,7 +319,7 @@ const StudentLeaders = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:5000/api/auth/student-coordinator/${editingLeader.id}`, {
+      const response = await fetch(`http://172.16.11.213:5000/api/auth/student-coordinator/${editingLeader.id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -438,7 +438,7 @@ const StudentLeaders = () => {
         };
       }
 
-      const response = await fetch("http://localhost:5000/api/auth/add-student-coordinator", {
+      const response = await fetch("http://172.16.11.213:5000/api/auth/add-student-coordinator", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -498,7 +498,7 @@ const StudentLeaders = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:5000/api/auth/student-coordinator/${leaderId}`, {
+      const response = await fetch(`http://172.16.11.213:5000/api/auth/student-coordinator/${leaderId}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,

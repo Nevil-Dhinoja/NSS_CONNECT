@@ -62,7 +62,7 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 app.use(express.static(path.join(__dirname, '../client')));
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
+app.listen(PORT, '172.16.11.213', () => {
   // Server started successfully
   console.log(`🚀 Here We Go Again ${PORT}`);
 });

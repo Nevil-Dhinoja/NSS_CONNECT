@@ -89,7 +89,7 @@ const Reports = () => {
   const fetchReports = async () => {
     const token = localStorage.getItem("nssUserToken");
     try {
-      const response = await fetch("http://localhost:5000/api/events/reports", {
+      const response = await fetch("http://172.16.11.213:5000/api/events/reports", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -143,7 +143,7 @@ const Reports = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:5000/api/events/reports/${selectedReport.id}/status`, {
+      const response = await fetch(`http://172.16.11.213:5000/api/events/reports/${selectedReport.id}/status`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -210,7 +210,7 @@ const Reports = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:5000/api/events/reports/${reportId}/download`, {
+      const response = await fetch(`http://172.16.11.213:5000/api/events/reports/${reportId}/download`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -290,7 +290,7 @@ const Reports = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:5000/api/events/reports/${report.id}`, {
+      const response = await fetch(`http://172.16.11.213:5000/api/events/reports/${report.id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,

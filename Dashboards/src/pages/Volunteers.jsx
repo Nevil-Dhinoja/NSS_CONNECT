@@ -160,15 +160,15 @@ const Volunteers = () => {
       // For Program Coordinators (pc), fetch all volunteers
       let endpoint;
       if (userRole === "sc") {
-        endpoint = "http://localhost:5000/api/volunteers/department/CE";
+        endpoint = "http://172.16.11.213:5000/api/volunteers/department/CE";
       } else if (userRole === "po") {
         // For Program Officers, try their department first, fallback to CE if needed
-        endpoint = `http://localhost:5000/api/volunteers/department/${userDepartment}`;
+        endpoint = `http://172.16.11.213:5000/api/volunteers/department/${userDepartment}`;
       } else if (userRole === "pc") {
-        endpoint = "http://localhost:5000/api/volunteers/all";
+        endpoint = "http://172.16.11.213:5000/api/volunteers/all";
       } else {
         // Default to all for unknown roles
-        endpoint = "http://localhost:5000/api/volunteers/all";
+        endpoint = "http://172.16.11.213:5000/api/volunteers/all";
       }
 
 
@@ -194,7 +194,7 @@ const Volunteers = () => {
         // For Program Officers, if department-specific API fails, try to get all and filter
         if (userRole === "po" && response.status === 404) {
           try {
-            const fallbackResponse = await fetch("http://localhost:5000/api/volunteers/all", {
+            const fallbackResponse = await fetch("http://172.16.11.213:5000/api/volunteers/all", {
               headers: {
                 Authorization: `Bearer ${token}`,
               },
@@ -265,7 +265,7 @@ const Volunteers = () => {
   const fetchAvailableDepartments = async () => {
     const token = localStorage.getItem("nssUserToken");
     try {
-      const response = await fetch("http://localhost:5000/api/volunteers/departments", {
+      const response = await fetch("http://172.16.11.213:5000/api/volunteers/departments", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -303,7 +303,7 @@ const Volunteers = () => {
     formData.append("file", file);
 
     try {
-      const response = await fetch("http://localhost:5000/api/volunteers/upload", {
+      const response = await fetch("http://172.16.11.213:5000/api/volunteers/upload", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -346,7 +346,7 @@ const Volunteers = () => {
     try {
       const token = localStorage.getItem("nssUserToken");
 
-      const response = await fetch("http://localhost:5000/api/volunteers/addVolunteer", {
+      const response = await fetch("http://172.16.11.213:5000/api/volunteers/addVolunteer", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -428,7 +428,7 @@ const Volunteers = () => {
 
   const handleUpdateVolunteer = async () => {
     const token = localStorage.getItem("nssUserToken");
-    const response = await fetch(`http://localhost:5000/api/volunteers/edit/${editVolunteer.id}`, {
+    const response = await fetch(`http://172.16.11.213:5000/api/volunteers/edit/${editVolunteer.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -449,7 +449,7 @@ const Volunteers = () => {
   const handleDeleteVolunteer = async (volunteerId, volunteerName) => {
     const token = localStorage.getItem("nssUserToken");
     try {
-      const response = await fetch(`http://localhost:5000/api/volunteers/delete/${volunteerId}`, {
+      const response = await fetch(`http://172.16.11.213:5000/api/volunteers/delete/${volunteerId}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,

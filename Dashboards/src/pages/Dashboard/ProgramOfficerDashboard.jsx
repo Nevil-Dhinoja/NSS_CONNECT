@@ -40,14 +40,14 @@ const ProgramOfficerDashboard = () => {
       setLoading(true);
       
       // Fetch volunteers for the PO's department
-      const volunteersResponse = await fetch("http://localhost:5000/api/volunteers/all", {
+      const volunteersResponse = await fetch("http://172.16.11.213:5000/api/volunteers/all", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
       });
       
       // Fetch working hours for approvals
-      const workingHoursResponse = await fetch("http://localhost:5000/api/working-hours/all", {
+      const workingHoursResponse = await fetch("http://172.16.11.213:5000/api/working-hours/all", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -73,7 +73,7 @@ const ProgramOfficerDashboard = () => {
         );
 
         // Fetch reports to count pending reports
-        const reportsResForStats = await fetch("http://localhost:5000/api/events/reports", {
+        const reportsResForStats = await fetch("http://172.16.11.213:5000/api/events/reports", {
           headers: { Authorization: `Bearer ${token}` },
         });
         
@@ -88,7 +88,7 @@ const ProgramOfficerDashboard = () => {
         }
 
         // Fetch events for stats
-        const eventsResponse = await fetch("http://localhost:5000/api/events/all", {
+        const eventsResponse = await fetch("http://172.16.11.213:5000/api/events/all", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -147,7 +147,7 @@ const ProgramOfficerDashboard = () => {
         setPendingApprovals(formattedApprovals);
 
         // Fetch recent reports
-        const reportsRes = await fetch("http://localhost:5000/api/events/reports", {
+        const reportsRes = await fetch("http://172.16.11.213:5000/api/events/reports", {
           headers: { Authorization: `Bearer ${token}` },
         });
         if (reportsRes.ok) {
@@ -203,8 +203,8 @@ const ProgramOfficerDashboard = () => {
 
     try {
       const endpoint = action === "approve" 
-        ? `http://localhost:5000/api/working-hours/approve/${id}`
-        : `http://localhost:5000/api/working-hours/reject/${id}`;
+        ? `http://172.16.11.213:5000/api/working-hours/approve/${id}`
+        : `http://172.16.11.213:5000/api/working-hours/reject/${id}`;
 
       const response = await fetch(endpoint, {
         method: "PUT",

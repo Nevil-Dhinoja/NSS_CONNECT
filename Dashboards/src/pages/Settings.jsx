@@ -156,7 +156,7 @@ const Settings = () => {
 
     try {
       const token = localStorage.getItem("nssUserToken");
-      const response = await fetch("http://localhost:5000/api/auth/password", {
+      const response = await fetch("http://172.16.11.213:5000/api/auth/password", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

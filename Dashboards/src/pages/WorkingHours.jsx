@@ -81,8 +81,8 @@ const WorkingHours = () => {
       // If user is Program Officer, fetch all working hours for their department
       // Otherwise, fetch only their own working hours
       const endpoint = userRole === "po" 
-        ? `http://localhost:5000/api/working-hours/department/${userDepartment}`
-        : "http://localhost:5000/api/working-hours/my-hours";
+        ? `http://172.16.11.213:5000/api/working-hours/department/${userDepartment}`
+        : "http://172.16.11.213:5000/api/working-hours/my-hours";
 
       const response = await fetch(endpoint, {
         headers: {
@@ -239,7 +239,7 @@ const WorkingHours = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:5000/api/working-hours/update/${editEntry.id}`, {
+      const response = await fetch(`http://172.16.11.213:5000/api/working-hours/update/${editEntry.id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -337,7 +337,7 @@ const WorkingHours = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:5000/api/working-hours/delete/${entryId}`, {
+      const response = await fetch(`http://172.16.11.213:5000/api/working-hours/delete/${entryId}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -476,7 +476,7 @@ const WorkingHours = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/api/working-hours/addWorkingHours", {
+      const response = await fetch("http://172.16.11.213:5000/api/working-hours/addWorkingHours", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

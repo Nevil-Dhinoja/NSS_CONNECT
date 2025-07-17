@@ -134,8 +134,8 @@ const Events = () => {
       // For SC users, fetch department-specific events
       // For PO/PC/HSC users, fetch all events (filtered by department for PO)
       const endpoint = (userRole === "sc" || userRole === "student coordinator") 
-        ? `http://localhost:5000/api/events/department/${encodeURIComponent(userDepartment || '')}`
-        : "http://localhost:5000/api/events/all";
+        ? `http://172.16.11.213:5000/api/events/department/${encodeURIComponent(userDepartment || '')}`
+        : "http://172.16.11.213:5000/api/events/all";
 
 
 
@@ -201,8 +201,8 @@ const Events = () => {
     try {
       // Use different endpoint for PC events
       const endpoint = (userRole === 'pc' || userRole === 'program coordinator') 
-        ? "http://localhost:5000/api/events/pc/add"
-        : "http://localhost:5000/api/events/add";
+        ? "http://172.16.11.213:5000/api/events/pc/add"
+        : "http://172.16.11.213:5000/api/events/add";
 
       const response = await fetch(endpoint, {
         method: "POST",
@@ -290,7 +290,7 @@ const Events = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:5000/api/events/update/${editingEvent.id}`, {
+      const response = await fetch(`http://172.16.11.213:5000/api/events/update/${editingEvent.id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -364,7 +364,7 @@ const Events = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/api/events/reports/template/download", {
+      const response = await fetch("http://172.16.11.213:5000/api/events/reports/template/download", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -454,7 +454,7 @@ const Events = () => {
       formData.append("event_id", patchedForm.event_id);
       formData.append("submitted_by", patchedForm.submitted_by);
       formData.append("report_file", patchedForm.report_file);
-      const response = await fetch("http://localhost:5000/api/events/submit-report", {
+      const response = await fetch("http://172.16.11.213:5000/api/events/submit-report", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -512,8 +512,8 @@ const Events = () => {
     try {
       // Use different endpoint for PC events
       const endpoint = eventType === 'pc_event' 
-        ? `http://localhost:5000/api/events/pc/delete/${eventId}`
-        : `http://localhost:5000/api/events/delete/${eventId}`;
+        ? `http://172.16.11.213:5000/api/events/pc/delete/${eventId}`
+        : `http://172.16.11.213:5000/api/events/delete/${eventId}`;
 
       const response = await fetch(endpoint, {
         method: "DELETE",
@@ -569,7 +569,7 @@ const Events = () => {
       // Fetch all reports for this user's role
       const fetchReports = async () => {
         const token = localStorage.getItem("nssUserToken");
-        const res = await fetch("http://localhost:5000/api/events/reports", {
+        const res = await fetch("http://172.16.11.213:5000/api/events/reports", {
           headers: { Authorization: `Bearer ${token}` },
         });
         if (res.ok) {
@@ -631,7 +631,7 @@ const Events = () => {
   const testEventsEndpoint = async () => {
     const token = localStorage.getItem("nssUserToken");
     try {
-      const response = await fetch("http://localhost:5000/api/events/test", {
+      const response = await fetch("http://172.16.11.213:5000/api/events/test", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -675,7 +675,7 @@ const Events = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:5000/api/events/update-statuses', {
+      const response = await fetch('http://172.16.11.213:5000/api/events/update-statuses', {
         method: 'POST',
         headers: {
           Authorization: `Bearer ${token}`,

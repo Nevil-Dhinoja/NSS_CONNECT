@@ -11,7 +11,7 @@ npm install nodemailer
 
 ```env
 # Database Configuration
-DB_HOST=localhost
+DB_HOST=172.16.11.213
 DB_USER=your_db_user
 DB_PASSWORD=your_db_password
 DB_NAME=nss_charusat
@@ -24,7 +24,7 @@ EMAIL_USER=your-email@gmail.com
 EMAIL_PASSWORD=your-app-password
 
 # Frontend URL
-FRONTEND_URL=http://localhost:3000
+FRONTEND_URL=http://172.16.11.213:3000
 
 # Server Port
 PORT=5000

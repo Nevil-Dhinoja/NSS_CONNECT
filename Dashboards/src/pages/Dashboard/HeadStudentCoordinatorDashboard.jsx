@@ -55,7 +55,7 @@ const HeadStudentCoordinatorDashboard = () => {
     try {
       const token = localStorage.getItem("nssUserToken");
       const roleName = encodeURIComponent("Student Coordinator");
-      const response = await fetch(`http://localhost:5000/api/auth/users/${roleName}`, {
+      const response = await fetch(`http://172.16.11.213:5000/api/auth/users/${roleName}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -92,7 +92,7 @@ const HeadStudentCoordinatorDashboard = () => {
   const fetchWorkingHours = async () => {
     try {
       const token = localStorage.getItem("nssUserToken");
-      const response = await fetch("http://localhost:5000/api/working-hours/all", {
+      const response = await fetch("http://172.16.11.213:5000/api/working-hours/all", {
         headers: {
           Authorization: `Bearer ${token}`,
         },

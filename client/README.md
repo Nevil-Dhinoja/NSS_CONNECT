@@ -18,9 +18,9 @@ This is the frontend client application for the NSS CHARUSAT project.
 ### 3. Environment Variables
 Create a `.env` file in the client directory with the following variables:
 ```
-REACT_APP_DASHBOARD_URL=http://localhost:8080/
+REACT_APP_DASHBOARD_URL=http://172.16.11.213:8080/
 REACT_APP_DRIVE_LINK=https://drive.google.com/drive/folders/1zbPXPL_5Eh6O0j4-vXirgdYDpAgVHX0T
-REACT_APP_API_BASE_URL=http://localhost:5000/api
+REACT_APP_API_BASE_URL=http://172.16.11.213:5000/api
 ```
 
 ## CSS Improvements

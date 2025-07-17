@@ -42,7 +42,7 @@ const LoginPCHSC = () => {
         password,
         role: userType,
       };
-      const res = await fetch("http://localhost:5000/api/auth/login", {
+      const res = await fetch("http://172.16.11.213:5000/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(loginPayload),
@@ -144,7 +144,7 @@ const LoginPCHSC = () => {
               type="button"
               className="w-full h-14 text-white rounded-xl font-semibold text-lg mt-2"
               style={{ background: '#1e3c72' }}
-              onClick={() => window.location.href = "http://localhost:5173/"}
+              onClick={() => window.location.href = "http://172.16.11.213:5173/"}
             >
               GO TO NSS CHARUSAT
             </Button>
