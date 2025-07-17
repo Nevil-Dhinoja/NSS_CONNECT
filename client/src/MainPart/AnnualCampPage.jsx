@@ -4,7 +4,7 @@ import image2 from "../assets/Event3.jpg";
 import image3 from "../assets/Event4.jpg";
 import image4 from "../assets/Event5.jpg";
 import image5 from "../assets/Event6.jpg";
-import "./MainPart.css";
+import "./MianPart.css";
 import Footer from "../components/Footer";
 
 import React, { useRef } from "react";

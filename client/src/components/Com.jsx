@@ -1,40 +1,46 @@
+
+
+import './style.css'
+import OurTeam from '../MainPart/OurTeam'
+import AboutUs from '../MainPart/AboutUs'
+import Home from './Home'
+import EventPage from '../MainPart/EventPage'
+import AnnualCampPage from '../MainPart/AnnualCampPage'
+import LoginPage from '../MainPart/LoginPage'
+import Nav from './Nav'
+import Download from '../MainPart/Download'
+import Footer from './Footer'
+
+
+
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import OurTeam from '../MainPart/OurTeam';
-import AboutUs from '../MainPart/AboutUs';
-import Home from './Home';
-import EventPage from '../MainPart/EventPage';
-import AnnualCampPage from '../MainPart/AnnualCampPage';
-import LoginPage from '../MainPart/LoginPage';
-import Download from '../MainPart/Download';
-import Nav from './Nav';
-import Footer from './Footer';
+
 function Com() {
-  return (
-    <Router>
+  
+
+    return (
+      <>
+      <div className="com">
+        
+      <Router>
+     
+      <Nav />
       <Routes>
-        {/* Public Routes */}
-        <Route
-          path="/*"
-          element={
-            <>
-              <Nav />
-              <Routes>
-                <Route path="/home" element={<Home />} />
-                <Route path="/about" element={<AboutUs />} />
-                <Route path="/our-team" element={<OurTeam />} />
-                <Route path="/events" element={<EventPage />} />
-                <Route path="/annual-camp" element={<AnnualCampPage />} />
-                <Route path="/login" element={<LoginPage />} />
-                <Route path="/download" element={<Download />} />
-              </Routes>
-              <Footer />
-            </>
-          }
-        />
-
+        <Route path="/" element={<Home />} /> 
+        <Route path="/home" element={<Home />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/our-team" element={<OurTeam />} />  {/* Correct Route */}
+        <Route path="/events" element={<EventPage />} />
+        <Route path="/annual-camp" element={<AnnualCampPage />} />
+        <Route path="/login" element={<LoginPage />} /> 
+        <Route path="/download" element={<Download />} />
       </Routes>
+      <Footer/>
     </Router>
-  );
-}
-
-export default Com;
+      </div>
+      </>
+    )
+  }
+  
+  export default Com

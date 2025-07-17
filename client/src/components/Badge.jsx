@@ -21,7 +21,7 @@ function Badge() {
           </p>
 
           <p style={{marginTop:"-20px"}}>
-            Konark Wheel – The badge features the Konark Sun Temple Wheel,
+            🛞 Konark Wheel – The badge features the Konark Sun Temple Wheel,
             representing progress, movement, and continuous development. It
             reflects:
             <ul>
@@ -57,7 +57,7 @@ function Badge() {
         
       </div>
 
-      <li style={{color:"#0765a5",width:"95%",marginTop:"40px",textAlign:"center"}}>
+      <li style={{color:"#0765a5",width:"95%",marginTop:"40px"}}>
       The CHARUSAT NSS Unit organizes numerous impactful events throughout the year, focusing on community service, social awareness, and skill development. Some of the key events include:
       </li>
 

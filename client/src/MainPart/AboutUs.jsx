@@ -1,4 +1,4 @@
-import './MainPart.css';
+import './MianPart.css';
 import Introduction from '../components/Introduction';
 import Launch from '../components/Launch';
 import Family from '../components/Family';

@@ -19,6 +19,8 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import NSSLogo from "../assets/NSS.png";
+import CharusatLogo from "../assets/5.png";
 
 const Login = () => {
   const [loginId, setLoginId] = useState("");
@@ -134,122 +136,128 @@ const Login = () => {
     }
   };
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 flex items-center justify-center p-4">
-      <div className="w-full max-w-md">
-        <Card className="bg-white/95 backdrop-blur-sm shadow-2xl border-0 rounded-3xl overflow-hidden">
-          <CardHeader className="text-center pb-4 pt-8 px-8">
-            <CardTitle className="text-3xl font-bold text-gray-900 mb-2">
-              Welcome Back
-            </CardTitle>
-            <CardDescription className="text-gray-600 text-lg">
-              Sign in to access your NSS Connect account
-            </CardDescription>
-          </CardHeader>
-
-          <CardContent className="p-8 pt-4">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="space-y-3">
-                <Label className="text-gray-700 font-semibold text-base">Institute</Label>
-                <Select value={institute} onValueChange={(v) => setInstitute(v)}>
+    <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#fff' }}>
+      <div style={{ background: '#fff', borderRadius: 24, boxShadow: '0 8px 32px rgba(0,0,0,0.15)', padding: 0, maxWidth: 900, width: '100%', display: 'flex', flexDirection: 'row', alignItems: 'stretch', overflow: 'hidden' }}>
+        <div style={{ flex: 1, background: '#1e3c72', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: 40 }}>
+          <img src={NSSLogo} alt="NSS Logo" style={{ width: 220, marginBottom: 24 }} />
+          <h1 className="Slogan" style={{ color: '#fff', fontSize: 28, fontWeight: 600, textAlign: 'center', marginTop: 16 }}>
+            "Not Me, But <span style={{ color: '#ff3b3b' }}>You"</span>
+          </h1>
+        </div>
+        <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: 40 }}>
+          <img src={CharusatLogo} alt="Charusat Logo" style={{ width: 160, marginBottom: 24 }} />
+          <form onSubmit={handleSubmit} className="form" style={{ width: '100%' }}>
+            <div style={{ marginBottom: 20 }}>
+              <Label className="text-gray-700 font-semibold text-base">Institute</Label>
+              <Select value={institute} onValueChange={(v) => setInstitute(v)}>
+                <SelectTrigger className="h-14 rounded-xl bg-gray-50 text-base">
+                  <SelectValue placeholder="Select Institute" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="1">DEPSTAR</SelectItem>
+                  <SelectItem value="2">CSPIT</SelectItem>
+                  <SelectItem value="3">PDPIAS</SelectItem>
+                  <SelectItem value="4">RPCP</SelectItem>
+                  <SelectItem value="5">IIIM</SelectItem>
+                  <SelectItem value="6">ARIP</SelectItem>
+                  <SelectItem value="7">CMPICA</SelectItem>
+                  <SelectItem value="8">BDIPS</SelectItem>
+                  <SelectItem value="9">MTIN</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+            {isDepRequired && (
+              <div style={{ marginBottom: 20 }}>
+                <Label className="text-gray-700 font-semibold text-base">Department</Label>
+                <Select value={department} onValueChange={setDepartment}>
                   <SelectTrigger className="h-14 rounded-xl bg-gray-50 text-base">
-                    <SelectValue placeholder="Select Institute" />
+                    <SelectValue placeholder="Select Department" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="1">DEPSTAR</SelectItem>
-                    <SelectItem value="2">CSPIT</SelectItem>
-                    <SelectItem value="3">PDPIAS</SelectItem>
-                    <SelectItem value="4">RPCP</SelectItem>
-                    <SelectItem value="5">IIIM</SelectItem>
-                    <SelectItem value="6">ARIP</SelectItem>
-                    <SelectItem value="7">CMPICA</SelectItem>
-                    <SelectItem value="8">BDIPS</SelectItem>
-                    <SelectItem value="9">MTIN</SelectItem>
+                    {departments
+                      .filter((dept) => dept.instituteId.toString() === institute)
+                      .map((dept) => (
+                        <SelectItem key={dept.id} value={dept.name}>
+                          {dept.name}
+                        </SelectItem>
+                      ))}
                   </SelectContent>
                 </Select>
               </div>
-
-              {["1", "2"].includes(institute) && (
-                <div className="space-y-3">
-                  <Label className="text-gray-700 font-semibold text-base">Department</Label>
-                  <Select value={department} onValueChange={setDepartment}>
-                    <SelectTrigger className="h-14 rounded-xl bg-gray-50 text-base">
-                      <SelectValue placeholder="Select Department" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {departments
-                        .filter((dept) => dept.instituteId.toString() === institute)
-                        .map((dept) => (
-                          <SelectItem key={dept.id} value={dept.name}>
-                            {dept.name}
-                          </SelectItem>
-                        ))}
-                    </SelectContent>
-                  </Select>
-                </div>
-              )}
-
-              <div className="space-y-3">
-                <Label className="text-gray-700 font-semibold text-base">Login As</Label>
-                <Select value={userType} onValueChange={(value) => setUserType(value)}>
-                  <SelectTrigger className="h-14 rounded-xl bg-gray-50 text-base">
-                    <SelectValue placeholder="Select Role" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="PO">Program Officer</SelectItem>
-                    <SelectItem value="SC">Student Coordinator</SelectItem>
-                    <SelectItem value="PC">Program Coordinator</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-
-              <div className="space-y-3">
-                <Label className="text-gray-700 font-semibold text-base">Login ID</Label>
-                <Input
-                  placeholder="Enter your username"
-                  value={loginId}
-                  onChange={(e) => setLoginId(e.target.value)}
-                  required
-                  className="h-14 rounded-xl bg-gray-50 text-base px-4"
-                />
-              </div>
-
-              <div className="space-y-3">
-                <Label className="text-gray-700 font-semibold text-base">Password</Label>
-                <Input
-                  type="password"
-                  placeholder="Enter your password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  required
-                  className="h-14 rounded-xl bg-gray-50 text-base px-4"
-                />
-              </div>
-
-              <Button
-                type="submit"
-                className="w-full h-14 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-xl font-semibold text-lg mt-8"
-                disabled={isLoading}
-              >
-                {isLoading ? "Logging in..." : "Sign in"}
-              </Button>
-            </form>
-
-            <div className="mt-6 flex flex-col items-center">
-              <Button
-                variant="outline"
-                className="w-full h-14 rounded-xl text-lg font-semibold mt-2"
-                onClick={() => navigate("/login-pc-hsc")}
-                type="button"
-              >
-                Login as PC/HSC
-              </Button>
+            )}
+            <div style={{ marginBottom: 20 }}>
+              <Label className="text-gray-700 font-semibold text-base">Login As</Label>
+              <Select value={userType} onValueChange={(value) => setUserType(value)}>
+                <SelectTrigger className="h-14 rounded-xl bg-gray-50 text-base">
+                  <SelectValue placeholder="Select Role" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="PO">Program Officer</SelectItem>
+                  <SelectItem value="SC">Student Coordinator</SelectItem>
+                  <SelectItem value="PC">Program Coordinator</SelectItem>
+                </SelectContent>
+              </Select>
             </div>
-
-            <div className="text-center mt-8 text-sm text-gray-500">
-              <p>&copy; {new Date().getFullYear()} NSS Connect. All rights reserved.</p>
+            <div style={{ marginBottom: 20 }}>
+              <Label className="text-gray-700 font-semibold text-base">Login ID</Label>
+              <Input
+                placeholder="Enter your username"
+                value={loginId}
+                onChange={(e) => setLoginId(e.target.value)}
+                required
+                className="h-14 rounded-xl bg-gray-50 text-base px-4"
+              />
             </div>
-          </CardContent>
-        </Card>
+            <div style={{ marginBottom: 20 }}>
+              <Label className="text-gray-700 font-semibold text-base">Password</Label>
+              <Input
+                type="password"
+                placeholder="Enter your password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
+                className="h-14 rounded-xl bg-gray-50 text-base px-4"
+              />
+            </div>
+            <Button
+              type="submit"
+              className="w-full h-14 text-white rounded-xl font-semibold text-lg mt-4"
+              style={{ background: '#1e3c72' }}
+              disabled={isLoading}
+            >
+              {isLoading ? "Logging in..." : "Sign in"}
+            </Button>
+          </form>
+          <div className="mt-6 flex flex-col items-center" style={{ width: '100%' }}>
+            <Button
+              variant="outline"
+              className="w-full h-14 rounded-xl text-lg font-semibold mt-2"
+              onClick={() => navigate("/login-pc-hsc")}
+              type="button"
+            >
+              Login as PC/HSC
+            </Button>
+            <Button
+              type="button"
+              className="w-full h-14 text-white rounded-xl font-semibold text-lg mt-2"
+              style={{ background: '#1e3c72' }}
+              onClick={() => window.location.href = "http://localhost:5173/"}
+            >
+              GO TO NSS CHARUSAT
+            </Button>
+            <Button
+              type="button"
+              className="w-full h-14 text-white rounded-xl font-semibold text-lg mt-2"
+              style={{ background: '#1e3c72' }}
+              onClick={() => window.location.href = "/meet-developers"}
+            >
+              Meet Developers
+            </Button>
+          </div>
+          <div className="text-center mt-8 text-sm text-gray-500">
+            <p>&copy; {new Date().getFullYear()} NSS Connect. All rights reserved.</p>
+          </div>
+        </div>
       </div>
     </div>
   );

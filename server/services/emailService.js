@@ -144,10 +144,6 @@ const sendWelcomeEmail = async (scEmail, scName, poName, poEmail, department, de
             </p>
             
             <div style="text-align: center; margin: 30px 0;">
-              <a href="${process.env.FRONTEND_URL || 'http://localhost:8080'}/login" 
-                 style="background-color: #1e40af; color: white; padding: 12px 30px; text-decoration: none; border-radius: 6px; display: inline-block;">
-                Login to Dashboard
-              </a>
             </div>
             
             <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 30px 0;">
@@ -209,10 +205,6 @@ const sendNotificationToPO = async (poEmail, poName, scName, scEmail, department
             </p>
             
             <div style="text-align: center; margin: 30px 0;">
-              <a href="${process.env.FRONTEND_URL || 'http://localhost:8080'}/dashboard" 
-                 style="background-color: #059669; color: white; padding: 12px 30px; text-decoration: none; border-radius: 6px; display: inline-block;">
-                Go to Dashboard
-              </a>
             </div>
             
             <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 30px 0;">
@@ -301,10 +293,6 @@ const sendWelcomeEmailToPO = async (poEmail, poName, pcName, pcEmail, department
             </p>
             
             <div style="text-align: center; margin: 30px 0;">
-              <a href="${process.env.FRONTEND_URL || 'http://localhost:8080'}/login" 
-                 style="background-color: #1e40af; color: white; padding: 12px 30px; text-decoration: none; border-radius: 6px; display: inline-block;">
-                Login to Dashboard
-              </a>
             </div>
             
             <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 30px 0;">
@@ -382,10 +370,6 @@ const sendNotificationToPC = async (pcEmail, pcName, poName, poEmail, department
             </p>
             
             <div style="text-align: center; margin: 30px 0;">
-              <a href="${process.env.FRONTEND_URL || 'http://localhost:8080'}/dashboard" 
-                 style="background-color: #059669; color: white; padding: 12px 30px; text-decoration: none; border-radius: 6px; display: inline-block;">
-                Go to Dashboard
-              </a>
             </div>
             
             <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 30px 0;">

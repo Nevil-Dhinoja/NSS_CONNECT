@@ -25,10 +25,10 @@ function Footer() {
 
             <div className="footerRight">
                 <h4><b>Quick Links</b></h4>
-                <Link to="/" >Photo Gallery</Link><br />
+                <Link to="/annual-camp" >Photo Gallery</Link><br />
                 <Link to="/download" >Download</Link><br />
-                <Link to="/" >Adopted Villages</Link><br />
-                <Link to="/" >Collaborations</Link><br />
+                <Link to="/events" >Adopted Villages</Link><br />
+                <Link to="/our-team" >Collaborations</Link><br />
             </div>
         </div>
     );

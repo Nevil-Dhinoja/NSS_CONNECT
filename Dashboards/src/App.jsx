@@ -19,6 +19,7 @@ import Approvals from "./pages/Approvals.jsx";
 import Profile from "./pages/Profile.jsx";
 import Settings from "./pages/Settings.jsx";
 import LoginPCHSC from "./pages/LoginPCHSC.jsx";
+import OurTeam from "./pages/OurTeam.jsx";
 
 
 const queryClient = new QueryClient();
@@ -43,6 +44,7 @@ const App = () => (
           <Route path="/profile" element={<Profile />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/login-pc-hsc" element={<LoginPCHSC />} />
+          <Route path="/meet-developers" element={<OurTeam />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -22,7 +22,7 @@ import i5 from "../assets/Dr. Rajesh V. Savalia_ Maths Department_ PDPIAS.jpg";
 import i6 from "../assets/Dr. Sagarkumar B. Patel_CSPIT- EC.jpg";
 import i7 from "../assets/Dr. Shreya Swami (PT)_ ARIP.jpg";
 import i8 from "../assets/Gaurang Patel.jpg";
-// import i9 from "../assets/Gauravkumar.jpg";
+import i9 from "../assets/Gauravkumar.jpg";
 import i10 from "../assets/Hardik Koria_RPCP.jpg";
 import i11 from "../assets/hetal passport size photo.jpg";
 import i12 from "../assets/Hitesh Makwana_DEPSTAR-IT.png";
@@ -35,11 +35,15 @@ import i18 from "../assets/Satayu Travadi -CSPIT ME.jpg";
 
 
 import im1 from "../assets/Dhruv EC.png";
-import im2 from "../assets/BANSI.png";
-import im3 from "../assets/Dhruvi.jpg";
-import im4 from "../assets/Dhruvin.png";
-import im5 from "../assets/Disha.jpg";
-import im6 from "../assets/Nemish.jpg";
+import im2 from "../assets/Diya.png";
+import im3 from "../assets/AARTI.png";
+import im4 from "../assets/JASH.png";
+import im5 from "../assets/Heet.jpg";
+import im6 from "../assets/Chesta.jpg";
+import im7 from "../assets/Utsav.jpg";
+import im8 from "../assets/PARV.png";
+// import im9 from "../assets/PARV.png";
+
 
 
 
@@ -49,9 +53,9 @@ const testimonials = [
   {
     image: image2,
     text: "I am happy to know that CHARUSAT has a goal set for the mission of social upliftment.",
-    name: "Pr. Kishan Patel",
+    name: "Prof. Kishan Patel",
     designation:
-      "Former President of India & Architect of Missile Programme of India",
+      "NSS Program Coordinator , CHARUSAT",
   },
 ];
 
@@ -62,185 +66,181 @@ const coordinators = [
     image: im1,
   },
   {
-    name: "Ms. Yukta Parmar",
-    role: "MTIN",
+    name: "Ms. Diya Thakkar",
+    role: "CSPIT-EC",
     image: im2,
   },
-  {
-    name: "Ms. Saloni Patel",
-    role: "ARIP",
-    image: im3,
-  },
+
   {
     name: "Ms. Aarti Jain",
     role: "CSPIT-CE",
-    image: im4,
+    image: im3,
   },
   {
     name: "Mr. Jash Bhungaliya",
     role: "CSPIT-ME",
-    image: im5,
-  },
-  {
-    name: "Ms. Priyanshi Jariwala",
-    role: "RPCP",
-    image: im6,
-  },
-  {
-    name: "Mr. Dhruv Ghelani",
-    role: "RPCP",
-    image: im1,
-  },
-  {
-    name: "Ms. Dhanshree Rmani",
-    role: "IIIM",
-    image: im2,
-  },
-  {
-    name: "Mr. Arya Kayastha",
-    role: "CSPIT-CE",
-    image: im3,
-  },
-  {
-    name: "Mr. Jay Rohit",
-    role: "ARIP",
     image: im4,
   },
   {
+    name: "Mr. Heet Vithalani",
+    role: "DEPSTAR-CE",
+    image: im5,
+  },
+  {
+    name: "Ms. Chesta Ginoya",
+    role: "DEPSTAR-CE",
+    image: im6,
+  },
+    {
     name: "Mr. Utsav Lodaliya",
     role: "CMPICA",
-    image: im5,
+    image: im7,
   },
-  {
-    name: "Mr. Nemish Sapara",
-    role: "CSPIT-AIML",
-    image: im6,
-  },
-  {
-    name: "Mr. Kaushal Savaliya",
-    role: "CSPIT-AIML",
-    image: im1,
-  },
-  {
-    name: "Mr. Dhruv Prajapati",
-    role: "CSPIT-IT",
-    image: im2,
-  },
-  {
-    name: "Ms. Soha Vohra",
-    role: "CSPIT-Civil",
-    image: im3,
-  },
-  {
-    name: "Ms. Yashvi Patel",
-    role: "DEPSTAR-CE",
-    image: im4,
-  },
-  {
-    name: "Ms. Diya Thakkar",
-    role: "CSPIT-EC",
-    image: im5,
-  },
-  {
+    {
     name: "Mr. Parv Chittora",
     role: "PDPIAS",
-    image: im6,
+    image: im8,
   },
-  {
-    name: "Ms. Nency Patel",
-    role: "BDIPS",
-    image: im1,
-  },
-  {
-    name: "Mr. Prem Koradiya",
-    role: "BDIPS",
-    image: im2,
-  },
-  {
-    name: "Mr. Maharshi Patel",
-    role: "DEPSTAR-CE",
-    image: im3,
-  },
-  {
-    name: "Ms. Parin Desai",
-    role: "CSPIT-EE",
-    image: im4,
-  },
-  {
-    name: "Ms. Bansi Kanani",
-    role: "DEPSTAR-IT",
-    image: im5,
-  },
-  {
-    name: "Mr. Dhruvin Mangukiya",
-    role: "DEPSTAR-CSE",
-    image: im6,
-  },
-  {
-    name: "Mr. Preet Chauhan",
-    role: "DEPSTAR-IT",
-    image: im1,
-  },
-  {
-    name: "Mr. Mayur Maheshwari",
-    role: "MTIN",
-    image: im2,
-  },
-  {
-    name: "Ms. Bansari Patel",
-    role: "CSMPICA",
-    image: im3,
-  },
-  {
-    name: "Mr. Jayraj Rathod",
-    role: "CSPIT-ME",
-    image: im4,
-  },
-  {
-    name: "Mr. Rushiprakash Patel",
-    role: "IIIM",
-    image: im5,
-  },
-  {
-    name: "Ms. Keshar Patel",
-    role: "PDPIS",
-    image: im6,
-  },
-  {
-    name: "Ms. Yukti Goyani",
-    role: "CSPIT-EE",
-    image: im1,
-  },
-  {
-    name: "Mr. Darsh Patel",
-    role: "CSPIT-CSE",
-    image: im2,
-  },
-  {
-    name: "Mr. Manan Monani",
-    role: "DEPSTAR-CSE",
-    image: im3,
-  },
-  {
-    name: "Ms. Azba Vohra",
-    role: "CSPIT-Civil",
-    image: im4,
-  },
-  {
-    name: "Ms. Ridhdhi Ramanuj",
-    role: "CSPIT-CE",
-    image: im5,
-  },
-  {
-    name: "Ms. Disha Shah",
-    role: "CSPIT-IT",
-    image: im6,
-  },
-  {
-    name: "Ms. Dhruvi Mahale",
-    role: "CSPIT-CSE",
-    image: im6,
-  },
+
+ 
+  // {
+  //   name: "Ms. Saloni Patel",
+  //   role: "ARIP",
+  //   image: im3,
+  // },
+  // {
+  //   name: "Mr. Arya Kayastha",
+  //   role: "CSPIT-CE",
+  //   image: im3,
+  // },
+  // {
+  //   name: "Mr. Jay Rohit",
+  //   role: "ARIP",
+  //   image: im4,
+  // },
+
+  // {
+  //   name: "Mr. Nemish Sapara",
+  //   role: "CSPIT-AIML",
+  //   image: im6,
+  // },
+  // {
+  //   name: "Mr. Kaushal Savaliya",
+  //   role: "CSPIT-AIML",
+  //   image: im1,
+  // },
+  // {
+  //   name: "Mr. Dhruv Prajapati",
+  //   role: "CSPIT-IT",
+  //   image: im2,
+  // },
+  // {
+  //   name: "Ms. Soha Vohra",
+  //   role: "CSPIT-Civil",
+  //   image: im3,
+  // },
+  // {
+  //   name: "Ms. Yashvi Patel",
+  //   role: "DEPSTAR-CE",
+  //   image: im4,
+  // },
+  // {
+  //   name: "Ms. Diya Thakkar",
+  //   role: "CSPIT-EC",
+  //   image: im5,
+  // },
+
+  // {
+  //   name: "Ms. Nency Patel",
+  //   role: "BDIPS",
+  //   image: im1,
+  // },
+  // {
+  //   name: "Mr. Prem Koradiya",
+  //   role: "BDIPS",
+  //   image: im2,
+  // },
+  // {
+  //   name: "Mr. Maharshi Patel",
+  //   role: "DEPSTAR-CE",
+  //   image: im3,
+  // },
+  // {
+  //   name: "Ms. Parin Desai",
+  //   role: "CSPIT-EE",
+  //   image: im4,
+  // },
+  // {
+  //   name: "Ms. Bansi Kanani",
+  //   role: "DEPSTAR-IT",
+  //   image: im5,
+  // },
+  // {
+  //   name: "Mr. Dhruvin Mangukiya",
+  //   role: "DEPSTAR-CSE",
+  //   image: im6,
+  // },
+  // {
+  //   name: "Mr. Preet Chauhan",
+  //   role: "DEPSTAR-IT",
+  //   image: im1,
+  // },
+  // {
+  //   name: "Mr. Mayur Maheshwari",
+  //   role: "MTIN",
+  //   image: im2,
+  // },
+  // {
+  //   name: "Ms. Bansari Patel",
+  //   role: "CSMPICA",
+  //   image: im3,
+  // },
+  // {
+  //   name: "Mr. Jayraj Rathod",
+  //   role: "CSPIT-ME",
+  //   image: im4,
+  // },
+
+  // {
+  //   name: "Ms. Keshar Patel",
+  //   role: "PDPIS",
+  //   image: im6,
+  // },
+  // {
+  //   name: "Ms. Yukti Goyani",
+  //   role: "CSPIT-EE",
+  //   image: im1,
+  // },
+  // {
+  //   name: "Mr. Darsh Patel",
+  //   role: "CSPIT-CSE",
+  //   image: im2,
+  // },
+  // {
+  //   name: "Mr. Manan Monani",
+  //   role: "DEPSTAR-CSE",
+  //   image: im3,
+  // },
+  // {
+  //   name: "Ms. Azba Vohra",
+  //   role: "CSPIT-Civil",
+  //   image: im4,
+  // },
+  // {
+  //   name: "Ms. Ridhdhi Ramanuj",
+  //   role: "CSPIT-CE",
+  //   image: im5,
+  // },
+  // {
+  //   name: "Ms. Disha Shah",
+  //   role: "CSPIT-IT",
+  //   image: im6,
+  // },
+  // {
+  //   name: "Ms. Dhruvi Mahale",
+  //   role: "CSPIT-CSE",
+  //   image: im6,
+  // },
   // Add more coordinators here
 ];
 
@@ -262,20 +262,20 @@ function OurTeam() {
   };
   return (
     <>
+      <div className="OurTeam">Our Team</div>
 
-      {/* <div className="top" style={{ marginTop: "50px", width: "300px" }}>
-        Program Coordinator
-      </div> */}
-
+      <div className="Coordinator">
+        <div className="AboutUs Pcordi" style={{marginTop:"5px"}}>
+          Program Coordinator
+        </div>
+      </div>
+      
       <div className="Statistics">
-        <div className="flex justify-center items-center min-h-screen bg-gray-100">
+        <div className="flex justify-center items-center bg-gray-100">
           <div
             className="w-full max-w-2xl p-5"
-            style={{ height: "500px", width: "1500px", borderRadius: "10px",textAlign:"center" }}
+            style={{ width: "100%", borderRadius: "10px",textAlign:"center"}}
           >
-              <div className="AboutUs Pcordi">
-              Program Coordinators
-      </div>
             <Swiper>
               {testimonials.map((testimonial, index) => (
                 <SwiperSlide
@@ -285,7 +285,7 @@ function OurTeam() {
                   <img
                     src={testimonial.image}
                     alt={testimonial.name}
-                    className="w-32 h-32 rounded-full border-4 border-white shadow-md mb-4"
+                    className="w-32 h-32 rounded-full border-4 border-white shadow-md mb-4 program-coordinator-image"
                     style={{
                       borderRadius: "20px",
                       height: "250px",
@@ -293,12 +293,7 @@ function OurTeam() {
                       marginTop: "30px",
                     }}
                   />
-                  {/* <p
-                    className="text-gray-700 italic"
-                    style={{ fontSize: "15px" }}
-                  >
-                    "{testimonial.text}"
-                  </p> */}
+
                   <h5 className="font-semibold text-gray-900 mt-0">
                     {testimonial.name}
                   </h5>
@@ -334,7 +329,7 @@ function OurTeam() {
           </div>
           <div className="CPhoto">
             <div className="C1">
-              <img src={i2} alt="" />
+              <img src={i3} alt="" />
             </div>
             <div className="C2">
               <p className="p1">Dr. Hardik Pandit</p>
@@ -344,7 +339,7 @@ function OurTeam() {
           </div>
           <div className="CPhoto">
             <div className="C1">
-              <img src={i3} alt="" />
+              <img src={i2} alt="" />
             </div>
             <div className="C2">
               <p className="p1">Prof. Martin Parmar</p>
@@ -359,7 +354,7 @@ function OurTeam() {
             <div className="C2">
               <p className="p1">Dr. Poonam Amrutia</p>
               
-              <p className="p3">MTIN</p>
+              <p className="p3">IIIM</p>
             </div>
           </div>
           <div className="CPhoto">
@@ -404,7 +399,7 @@ function OurTeam() {
           </div>
           <div className="CPhoto">
             <div className="C1">
-              <img src={i1} alt="" />
+              <img src={i9} alt="" />
             </div>
             <div className="C2">
               <p className="p1">Prof. Gauravkumar</p>
@@ -464,7 +459,7 @@ function OurTeam() {
           </div>
           <div className="CPhoto">
             <div className="C1">
-              <img src={i15} alt="" />
+              <img src={i16} alt="" />
             </div>
             <div className="C2">
               <p className="p1">Prof. Pinal Hansora</p>
@@ -474,7 +469,7 @@ function OurTeam() {
           </div>
           <div className="CPhoto">
             <div className="C1">
-              <img src={i16} alt="" />
+              <img src={i17} alt="" />
             </div>
             <div className="C2">
               <p className="p1">Prof. Rajnik Katriya</p>
@@ -484,7 +479,7 @@ function OurTeam() {
           </div>
           <div className="CPhoto">
             <div className="C1">
-              <img src={i17} alt="" />
+              <img src={i18} alt="" />
             </div>
             <div className="C2">
               <p className="p1">Prof. Satayu Travadi</p>
@@ -494,21 +489,22 @@ function OurTeam() {
           </div>
           <div className="CPhoto">
             <div className="C1">
-              <img src={i18} alt="" />
+              <img src={i15} alt="" />
             </div>
             <div className="C2">
-              <p className="p1">Pr. Satayu Travadi</p>
-       
-              <p className="p3">CSPIT</p>
+              <p className="p1">Prof. Parth Thakor</p>
+           
+              <p className="p3">BDIPS</p>
             </div>
           </div>
+          
           
           
         </div>
       </div>
 
       <div className="StudentCoordinator">
-      <div className="AboutUs Pcordi" style={{ marginTop: "-250px" }}>
+      <div className="AboutUs Pcordi">
         Student Coordinators
       </div>
 
@@ -521,7 +517,7 @@ function OurTeam() {
           <div
             key={index}
             className="SCPhoto bg-gray-200 w-28 h-28 rounded-md flex flex-col items-center p-2"
-            style={{height:"300px"}}
+            
           >
             <center><div className="S1">
             <center><img
@@ -541,7 +537,7 @@ function OurTeam() {
       </div>
 
       {/* Pagination Controls */}
-      <nav
+      {/* <nav
         aria-label="Page navigation example"
         className="mt-4 flex justify-center"
         style={{ marginLeft: "170px" }}
@@ -566,7 +562,7 @@ function OurTeam() {
             </button>
           </li>
         </ul>
-      </nav>
+      </nav> */}
     </div>
 
       <div className="f1" style={{ marginTop: "130px", width: "100%" }}>

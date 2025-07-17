@@ -2,9 +2,7 @@ import React, { useEffect, useState } from "react";
 import image2 from "../assets/cordi4.jpeg";
 import image3 from "../assets/Pcordi.jpg";
 import image4 from "../assets/Pcordi2.webp";
-// import Footer from "./Footer";
-// import "../components/style.css";
-// import "../components/HomePage.css";
+
 
 import "../components/Mission.css";
 import "../components/BackgroundSlideshow.css";

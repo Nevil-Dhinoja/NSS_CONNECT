@@ -86,7 +86,7 @@ import imageIN4 from "../assets/Republic & independence Day/In4.jpeg"
 
 // import imagebg from "../assets/bg4.jpg";
 
-import "./MainPart.css";
+import "./MianPart.css";
 
 
 const villageImages = {
@@ -118,7 +118,7 @@ const initiatives = [
   { title: "World Pharmacist Day", images: [imagewpd1, imagewpd2, imagewpd3, imagewpd4] },
   { title: "Republic Day", images: [imageRP1, imageRP2, imageRP3, imageRP4] },
   { title: "Independence day", images: [imageIN1, imageIN2, imageIN3, imageIN4] },
-  //  { title: "Other Memory", image:[imageIN1], driveLink: process.env.REACT_APP_DRIVE_LINK || "https://drive.google.com/drive/folders/1zbPXPL_5Eh6O0j4-vXirgdYDpAgVHX0T" },
+  //  { title: "Other Memory", image:[imageIN1], driveLink:"https://drive.google.com/drive/folders/1zbPXPL_5Eh6O0j4-vXirgdYDpAgVHX0T" },
 ];
 
 function EventPage() {

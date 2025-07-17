@@ -12,6 +12,8 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import NSSLogo from "../assets/NSS.png";
+import CharusatLogo from "../assets/5.png";
 
 const LoginPCHSC = () => {
   const [loginId, setLoginId] = useState("");
@@ -88,60 +90,74 @@ const LoginPCHSC = () => {
     }
   };
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 flex items-center justify-center p-4">
-      <div className="w-full max-w-md">
-        <Card className="bg-white/95 backdrop-blur-sm shadow-2xl border-0 rounded-3xl overflow-hidden">
-          <CardHeader className="text-center pb-4 pt-8 px-8">
-            <CardTitle className="text-3xl font-bold text-gray-900 mb-2">
-              PC/HSC Login
-            </CardTitle>
-            <CardDescription className="text-gray-600 text-lg">
-              Sign in as Program Coordinator or Head Student Coordinator
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="p-8 pt-4">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="space-y-3">
-                <Label className="text-gray-700 font-semibold text-base">Login ID</Label>
-                <Input
-                  value={loginId}
-                  onChange={(e) => setLoginId(e.target.value)}
-                  placeholder="Enter Login ID"
-                  className="h-14 rounded-xl bg-gray-50 text-base"
-                />
-              </div>
-              <div className="space-y-3">
-                <Label className="text-gray-700 font-semibold text-base">Password</Label>
-                <Input
-                  type="password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  placeholder="Enter Password"
-                  className="h-14 rounded-xl bg-gray-50 text-base"
-                />
-              </div>
-              <div className="space-y-3">
-                <Label className="text-gray-700 font-semibold text-base">Login As</Label>
-                <select
-                  value={userType}
-                  onChange={(e) => setUserType(e.target.value)}
-                  className="h-14 rounded-xl bg-gray-50 text-base w-full px-4"
-                >
-                  <option value="">Select Role</option>
-                  <option value="pc">Program Coordinator</option>
-                  <option value="hsc">Head Student Coordinator</option>
-                </select>
-              </div>
-              <Button
-                type="submit"
-                className="w-full h-14 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-xl font-semibold text-lg mt-8"
-                disabled={isLoading}
+    <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#fff' }}>
+      <div style={{ background: '#fff', borderRadius: 24, boxShadow: '0 8px 32px rgba(0,0,0,0.15)', padding: 0, maxWidth: 900, width: '100%', display: 'flex', flexDirection: 'row', alignItems: 'stretch', overflow: 'hidden' }}>
+        <div style={{ flex: 1, background: '#1e3c72', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: 40 }}>
+          <img src={NSSLogo} alt="NSS Logo" style={{ width: 220, marginBottom: 24 }} />
+          <h1 className="Slogan" style={{ color: '#fff', fontSize: 28, fontWeight: 600, textAlign: 'center', marginTop: 16 }}>
+            "Not Me, But <span style={{ color: '#ff3b3b' }}>You"</span>
+          </h1>
+        </div>
+        <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: 40 }}>
+          <img src={CharusatLogo} alt="Charusat Logo" style={{ width: 160, marginBottom: 24 }} />
+          <form onSubmit={handleSubmit} className="form" style={{ width: '100%' }}>
+            <div style={{ marginBottom: 20 }}>
+              <Label className="text-gray-700 font-semibold text-base">Login ID</Label>
+              <Input
+                value={loginId}
+                onChange={(e) => setLoginId(e.target.value)}
+                placeholder="Enter Login ID"
+                className="h-14 rounded-xl bg-gray-50 text-base"
+              />
+            </div>
+            <div style={{ marginBottom: 20 }}>
+              <Label className="text-gray-700 font-semibold text-base">Password</Label>
+              <Input
+                type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                placeholder="Enter Password"
+                className="h-14 rounded-xl bg-gray-50 text-base"
+              />
+            </div>
+            <div style={{ marginBottom: 20 }}>
+              <Label className="text-gray-700 font-semibold text-base">Login As</Label>
+              <select
+                value={userType}
+                onChange={(e) => setUserType(e.target.value)}
+                className="h-14 rounded-xl bg-gray-50 text-base w-full px-4"
               >
-                {isLoading ? "Logging in..." : "Login"}
-              </Button>
-            </form>
-          </CardContent>
-        </Card>
+                <option value="">Select Role</option>
+                <option value="pc">Program Coordinator</option>
+                <option value="hsc">Head Student Coordinator</option>
+              </select>
+            </div>
+            <Button
+              type="submit"
+              className="w-full h-14 text-white rounded-xl font-semibold text-lg mt-4"
+              style={{ background: '#1e3c72' }}
+              disabled={isLoading}
+            >
+              {isLoading ? "Logging in..." : "Login"}
+            </Button>
+            <Button
+              type="button"
+              className="w-full h-14 text-white rounded-xl font-semibold text-lg mt-2"
+              style={{ background: '#1e3c72' }}
+              onClick={() => window.location.href = "http://localhost:5173/"}
+            >
+              GO TO NSS CHARUSAT
+            </Button>
+            <Button
+              type="button"
+              className="w-full h-14 text-white rounded-xl font-semibold text-lg mt-2"
+              style={{ background: '#1e3c72' }}
+              onClick={() => navigate("/login")}
+            >
+              Back to Previous SC Login
+            </Button>
+          </form>
+        </div>
       </div>
     </div>
   );

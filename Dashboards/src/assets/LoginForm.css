@@ -1,0 +1,121 @@
+.login-container {
+  display: flex;
+  height: 100vh;
+/*   
+  border: 2px solid red; */
+  background-color: #004080;
+}
+
+.logo-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Slogan{
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  margin-top: 25px;
+  text-align: center;
+}
+.heilight{
+  color: red;
+  font-size: 33px;
+
+}
+/* @keyframes rotate-logo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+.nss-logo {
+  width: 50%;
+  max-width: 500px;
+  /* animation: rotate-logo 15s linear infinite; */
+}
+
+.charusat-logo {
+ 
+  
+  width: 50%;
+  margin: 5%;
+  margin-top: 70px;
+}
+
+.login-card {
+  flex: 1.5;
+  /* background-color: white; */
+  border-radius: 6% 10px 10px 6%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.input-field {
+  width: 55%;
+  padding: 20px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.forgot-password {
+  font-size: 1em;
+  color: #004080;
+  text-decoration: none;
+}
+
+.login-button {
+  width: 102.5%;
+  margin-top: 25px;
+  padding: 15px;
+  font-size: 1em;
+  background-color: #0765a5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+ 
+}
+.Nss-logo{
+  margin-top: -10px;
+  max-width: 400px;
+  height: 100px;
+} 
+.login-button:hover {
+  background-color: skyblue;
+  color: #0765a5;
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-section {
+    flex: none;
+    padding: 20px 0;
+  }
+
+  .nss-logo {
+    width: 60%;
+  }
+
+  .login-card {
+    width: 90%;
+    border-radius: 20px;
+  }
+
+  .charusat-logo {
+    width: 70%;
+  }
+}

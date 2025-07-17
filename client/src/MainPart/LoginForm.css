@@ -1,9 +1,9 @@
 .login-container {
   display: flex;
+  height: 100vh;
+/*   
+  border: 2px solid red; */
   background-color: #004080;
-  margin: 50px;
-  padding: 50px 0  ;
-  border-radius: 20px 20px 20px 20px;
 }
 
 .logo-section {
@@ -13,75 +13,63 @@
   justify-content: center;
   align-items: center;
 }
-
-.Slogan {
+.Slogan{
   font-family: 'Courier New', Courier, monospace;
   color: white;
   margin-top: 25px;
   text-align: center;
 }
-.form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.heilight {
+.heilight{
   color: red;
+  font-size: 33px;
+
 }
+/* @keyframes rotate-logo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
 
 .nss-logo {
   width: 50%;
   max-width: 500px;
+  /* animation: rotate-logo 15s linear infinite; */
+}
+
+.charusat-logo {
+ 
+  
+  width: 50%;
+  margin: 5%;
+  margin-top: 70px;
 }
 
 .login-card {
   flex: 1.5;
-  border-radius: 6% 0px 0px 8%;
+  /* background-color: white; */
+  border-radius: 6% 10px 10px 6%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 20px;
-  background-color: #f2f2f2;
-  overflow-y: auto;
-  position: relative;
 }
-
-.charusat-logo {
-  width: 50%;
-  margin: 20px auto;
-  margin-top: 40px;
-  max-width: 300px;
-  position: relative;
-  top: 0;
-  background-color: #f2f2f2;
-  z-index: 10;
-  padding-bottom: 10px;
-}
-
 
 .input-field {
-  width: 70%;
+  width: 55%;
   padding: 20px;
   margin: 5px 0;
   border: 1px solid #ccc;
   border-radius: 8px;
-  font-size: 1em;
-  color: #333;
-  background-color: white;
-  appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'%3E%3Cpath d='M0 2.5 L5 7.5 L10 2.5 Z' fill='%23004080'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 1rem center;
-  background-size: 10px;
 }
 
 .forgot-password {
   font-size: 1em;
   color: #004080;
   text-decoration: none;
-  margin: 0 4px;
 }
 
 .login-button {
@@ -94,13 +82,16 @@
   border: none;
   border-radius: 6px;
   cursor: pointer;
+ 
 }
-
-.Nss-logo {
-  /* margin-top: -10px; */
-  max-width: 100%;
-  position: relative;
-  height: 200px;
+.Nss-logo{
+  margin-top: -10px;
+  max-width: 400px;
+  height: 100px;
+} 
+.login-button:hover {
+  background-color: skyblue;
+  color: #0765a5;
 }
 
 @media (max-width: 768px) {
@@ -116,7 +107,7 @@
   }
 
   .nss-logo {
-    width: 50%;
+    width: 60%;
   }
 
   .login-card {
